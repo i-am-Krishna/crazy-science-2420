@@ -1,0 +1,12 @@
+.new_product{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(310px,max-content));
+    justify-content:center;
+    gap: 2px;
+    padding:initial;
+    text-align: left;
+    font-size: small;
+
+    }
+    
