@@ -16,7 +16,7 @@ const CartPage = () => {
   // };
 
   const getCart = () => {
-    axios.get("http://localhost:7000/Cart")
+    axios.get("http://localhost:8080/Cart")
     .then((r) => {
       setCartData(r.data)
       
@@ -31,7 +31,7 @@ const CartPage = () => {
 
   const handleDelete = (id) => {
     console.log(id);
-    axios.delete(`http://localhost:7000/Cart/${id}`)
+    axios.delete(`http://localhost:8080/Cart/${id}`)
     .then(() => {
       getCart();
     })
