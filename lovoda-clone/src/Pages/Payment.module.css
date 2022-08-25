@@ -1,0 +1,94 @@
+.PaymentHead {
+  border: 0px solid black;
+  height: 718px;
+  display: flex;
+  justify-content: space-between;
+}
+.firstHead {
+  border: 0px solid black;
+  width: 62%;
+}
+.firstHead h1 {
+  border: 0px solid red;
+  width: 58%;
+}
+.firstHead p {
+  border: 0px solid red;
+  width: 65%;
+  height: 20px;
+}
+.secondHead {
+  border: 2px solid black;
+  width: 43%;
+  background-color: rgb(187, 187, 240);
+}
+.PaymentSecondHead {
+  border: 0px solid blue;
+  height: 50px;
+  width: 50%;
+  margin-left: 18%;
+  display: flex;
+}
+.form {
+  border: 0px solid black;
+  height: 480px;
+  width: 90%;
+  margin: auto;
+}
+
+.formFirst {
+  display: flex;
+  border: 0px solid red;
+  justify-content: space-between;
+  width: 81%;
+  margin-left: 14%;
+}
+.Checkbox {
+  display: flex;
+  margin: auto;
+  border: 0px solid rgb(251, 147, 147);
+  width: 74%;
+}
+.Checkbox p {
+  font-size: 10px;
+}
+.shipping p {
+  border: 0px solid red;
+}
+
+/*first*/
+.Information {
+  border: 0px solid black;
+  height: 500px;
+}
+.ContactInfo {
+  border: 0px solid red;
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
+}
+.ContactInfoTwo {
+  border: 0px solid blue;
+  width: 55%;
+  margin-left: 14%;
+  font-size: 15px;
+}
+.ContactInfoThree {
+  border: 0px solid rgb(23, 148, 90);
+  width: 70%;
+  margin-left: 5%;
+  font-size: 15px;
+}
+
+.ContactInfoThree p {
+  margin-left: 20px;
+  width: 80%;
+}
+.ContactInput {
+  border: 0px solid red;
+  height: 300px;
+}
+.ContatCheck{
+    display: flex;
+}
