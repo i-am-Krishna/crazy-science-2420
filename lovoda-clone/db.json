@@ -1,73 +1,73 @@
 {
     "HomePageData":[
         {
-            "id":"1",
+            "id": 1,
             "name":"Evermore Ear Cuff Earrings",
             "description":"",
-            "price":"$10.00",
+            "price":"10.00",
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-2_1_823x.jpg?v=1659450395",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-3_1_823x.jpg?v=1659450395",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-1_1_823x.jpg?v=1659450395"
         },
         {
-            "id":"2",
+            "id": 2,
             "name":"Wired Ear Cuff Earrings",
             "description":"",
-            "price":"$10.00",
+            "price":"10.00",
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101103-2_1.jpg?v=1659450313",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101103-3_1_1100x.jpg?v=1659450313",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101103-1_1.jpg?v=1659450313"
         },
         {
-            "id":"3",
+            "id": 3,
             "name":"Fern Ear Cuff Earrings",
             "description":"",
-            "price":"$10.00",
+            "price":"10.00",
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101102-1_1_823x.jpg?v=1659450226",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101102-4_1_823x.jpg?v=1659450231",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101102-2_1_823x.jpg?v=1659450231"
         },
         {
-            "id":"4",
+            "id": 4,
             "name":"Blossom Ear Cuff Earrings",
             "description":"",
-            "price":"$10.00",
+            "price":"10.00",
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101101-1_1_823x.jpg?v=1659450051",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101101-3_1_823x.jpg?v=1659450054",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101101-2_1_823x.jpg?v=1659450054"
         },
         {
-            "id":"5",
+            "id": 5,
             "name":"Barrel Stone Earrings",
             "description":"",
-            "price":"$18.00",
+            "price":"18.00",
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101108-3_1_823x.jpg?v=1659449973",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101108-4_1_823x.jpg?v=1659449973",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101108-1_1_1100x.jpg?v=1659449973"
         },
         {
-            "id":"6",
+            "id": 6,
             "name":"Ball Stud Earrings | Gold",
             "description":"",
-            "price":"$12.00",
+            "price":"12.00",
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-G-2_1_823x.jpg?v=1659449908",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-G-3_1_823x.jpg?v=1659449908",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-G-1_1_823x.jpg?v=1659449908"
         },
         {
-            "id":"7",
+            "id": 7,
             "name":"Classic Stone Stud Earrings | Gold",
             "description":"",
-            "price":"$12.00",
+            "price":"12.00",
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101106-G-1_1_823x.jpg?v=1659449836",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101106-G-4_1_823x.jpg?v=1659449841",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101106-G-2_1_823x.jpg?v=1659449841"
         },
         {
-            "id":"8",
+            "id": 8,
             "name":"Acclaim Hoop Earrings",
             "description":"",
-            "price":"$20.00",
+            "price":"20.00",
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101105-1_1_823x.jpg?v=1659449763",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101105-4_1_823x.jpg?v=1659449765",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101105-2_1_823x.jpg?v=1659449765"
