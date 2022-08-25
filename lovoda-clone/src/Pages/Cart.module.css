@@ -12,6 +12,7 @@
     width: 19%;
     
 }
+
 .quantity p{
     border: 0px solid gold;
     margin-left: -300px;
@@ -55,18 +56,19 @@ width: 15%;
     border: 0px solid red;
     width: 30%;
     margin: auto;
-    padding-left: 620px;
-    margin-top:20%;
+    padding-left: 650px;
+    margin-top:14%;
 }
 .btn button {
     background-color: black;
     color: white;
     height: 50px;
-    width: 70%;
+    width: 60%;
     font-size: 20px;
     
 
 }
+
 .btn2 img{
     height: 60px;
     background-color: blue;
@@ -76,11 +78,15 @@ width: 15%;
     background-color: rgb(60, 60, 160);
     height: 63px;
 
+    border:none;
+
+
 }
 
 .btn3 button{
     background-color: rgb(254, 207, 52);
     height: 63px;
+    border:none;
 }
 
 .btn3 img{
@@ -90,6 +96,8 @@ background-color:none;
 .btn5 button{
     background-color: rgb(20, 20, 20);
     height: 63px;
+    border:none;
+
 }
 .btn5 img{
     height: 60px;
@@ -107,19 +115,19 @@ background-color:none;
     width: 30%;
     font-size: 20px;
 }
-.imageContainer{
+.imageContainerTwo{
     border: 0px solid teal;   
      margin: auto;
      width: 90%;
      display: flex;
 
 }
-.imageContainer div{
+.imageContainerTwo div{
     border: 0px solid rgb(51, 223, 223);
     margin: none;
     width: 50%;
 }
-.imageContainer img{
+.imageContainerTwo img{
     height: 226px;
     width: 90%;
 }
@@ -131,4 +139,88 @@ height: 40px;
 width: 10%;
 font-size: 15px;
 margin-top: 0.5%;
+}
+.afterPay img{
+    height: 35px;
+    width:18%;
+    background-color: rgb(117, 247, 216);
+    border-radius:30%
+}
+
+/*  increment*/
+
+
+
+.ProductContainerTwo{
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+    border: 0px solid red;
+    width: 106%;
+}
+.Productimg p{
+  margin-left: 210%;
+}
+
+.imageContainer img{
+    height: 200px;
+    margin-left: 90%;
+
+}
+.CounterF{
+    border: 1px solid rgb(53, 51, 51);
+    display: flex;
+    gap: 17px;
+    width: 10%;
+    height: 51px;
+    
+}
+.plus{
+    margin-top: 2%;
+    
+}
+.plus button{
+    height: 15px;
+    border: none;
+ background-color:white;
+
+    
+}
+.minus{
+    margin-top: 2%;
+    
+}
+.minus button {
+    height: 20px;
+    border: none;
+    background-color:white;
+
+
+}
+.CountSec h1{
+   margin-top:-1%;
+}
+.Delete{
+    width: 20%;
+    border: 0px solid red;
+    margin-left:10% ;
+    margin-top: 10%;
+}
+
+
+.ProductContainer{
+    border:0px solid red;
+}
+
+.counterContainer{
+    border:0px solid blue;
+    display: flex;
+    justify-content: space-around;
+
+}
+.TotalContainer{
+    border:0px solid rgb(0, 255, 115);
+    display: flex;
+    width: 97.4%;
+    justify-content: space-around;
 }
