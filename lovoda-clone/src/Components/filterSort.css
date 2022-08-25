@@ -1,0 +1,7 @@
+.filter_sort{
+    display: flex;
+    justify-content:space-between ;
+    margin: 2rem 12rem 2rem 9rem;
+    color: rgb(52, 49, 49);
+    font-size: .9rem;
+}

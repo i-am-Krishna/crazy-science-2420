@@ -1,10 +1,86 @@
 {
     "HomePageData":[
         {
+            "id": 1,
+            "name":"Evermore Ear Cuff Earrings",
+            "description":"",
+            "price":"10.00",
+            "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-2_1_823x.jpg?v=1659450395",
+            "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-3_1_823x.jpg?v=1659450395",
+            "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-1_1_823x.jpg?v=1659450395"
+        },
+        {
+            "id": 2,
+            "name":"Wired Ear Cuff Earrings",
+            "description":"",
+            "price":"10.00",
+            "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101103-2_1.jpg?v=1659450313",
+            "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101103-3_1_1100x.jpg?v=1659450313",
+            "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101103-1_1.jpg?v=1659450313"
+        },
+        {
+            "id": 3,
+            "name":"Fern Ear Cuff Earrings",
+            "description":"",
+            "price":"10.00",
+            "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101102-1_1_823x.jpg?v=1659450226",
+            "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101102-4_1_823x.jpg?v=1659450231",
+            "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101102-2_1_823x.jpg?v=1659450231"
+        },
+        {
+            "id": 4,
+            "name":"Blossom Ear Cuff Earrings",
+            "description":"",
+            "price":"10.00",
+            "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101101-1_1_823x.jpg?v=1659450051",
+            "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101101-3_1_823x.jpg?v=1659450054",
+            "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101101-2_1_823x.jpg?v=1659450054"
+        },
+        {
+            "id": 5,
+            "name":"Barrel Stone Earrings",
+            "description":"",
+            "price":"18.00",
+            "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101108-3_1_823x.jpg?v=1659449973",
+            "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101108-4_1_823x.jpg?v=1659449973",
+            "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101108-1_1_1100x.jpg?v=1659449973"
+        },
+        {
+            "id": 6,
+            "name":"Ball Stud Earrings | Gold",
+            "description":"",
+            "price":"12.00",
+            "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-G-2_1_823x.jpg?v=1659449908",
+            "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-G-3_1_823x.jpg?v=1659449908",
+            "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-G-1_1_823x.jpg?v=1659449908"
+        },
+        {
+            "id": 7,
+            "name":"Classic Stone Stud Earrings | Gold",
+            "description":"",
+            "price":"12.00",
+            "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101106-G-1_1_823x.jpg?v=1659449836",
+            "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101106-G-4_1_823x.jpg?v=1659449841",
+            "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101106-G-2_1_823x.jpg?v=1659449841"
+        },
+        {
+            "id": 8,
+            "name":"Acclaim Hoop Earrings",
+            "description":"",
+            "price":"20.00",
+            "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101105-1_1_823x.jpg?v=1659449763",
+            "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101105-4_1_823x.jpg?v=1659449765",
+            "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101105-2_1_823x.jpg?v=1659449765"
+        }
+
+    ],
+
+    "shopAll":[
+        {
             "id":"1",
             "name":"Evermore Ear Cuff Earrings",
             "description":"",
-            "price":"$10.00",
+            "price":10.00,
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-2_1_823x.jpg?v=1659450395",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-3_1_823x.jpg?v=1659450395",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-1_1_823x.jpg?v=1659450395"
@@ -13,7 +89,7 @@
             "id":"2",
             "name":"Wired Ear Cuff Earrings",
             "description":"",
-            "price":"$10.00",
+            "price":10.00,
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101103-2_1.jpg?v=1659450313",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101103-3_1_1100x.jpg?v=1659450313",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101103-1_1.jpg?v=1659450313"
@@ -22,7 +98,7 @@
             "id":"3",
             "name":"Fern Ear Cuff Earrings",
             "description":"",
-            "price":"$10.00",
+            "price":10.00,
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101102-1_1_823x.jpg?v=1659450226",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101102-4_1_823x.jpg?v=1659450231",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101102-2_1_823x.jpg?v=1659450231"
@@ -31,7 +107,7 @@
             "id":"4",
             "name":"Blossom Ear Cuff Earrings",
             "description":"",
-            "price":"$10.00",
+            "price":10.00,
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101101-1_1_823x.jpg?v=1659450051",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101101-3_1_823x.jpg?v=1659450054",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101101-2_1_823x.jpg?v=1659450054"
@@ -40,7 +116,7 @@
             "id":"5",
             "name":"Barrel Stone Earrings",
             "description":"",
-            "price":"$18.00",
+            "price":18.00,
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101108-3_1_823x.jpg?v=1659449973",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101108-4_1_823x.jpg?v=1659449973",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101108-1_1_1100x.jpg?v=1659449973"
@@ -49,7 +125,7 @@
             "id":"6",
             "name":"Ball Stud Earrings | Gold",
             "description":"",
-            "price":"$12.00",
+            "price":12.00,
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-G-2_1_823x.jpg?v=1659449908",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-G-3_1_823x.jpg?v=1659449908",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-G-1_1_823x.jpg?v=1659449908"
@@ -58,7 +134,7 @@
             "id":"7",
             "name":"Classic Stone Stud Earrings | Gold",
             "description":"",
-            "price":"$12.00",
+            "price":12.00,
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101106-G-1_1_823x.jpg?v=1659449836",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101106-G-4_1_823x.jpg?v=1659449841",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101106-G-2_1_823x.jpg?v=1659449841"
@@ -67,10 +143,185 @@
             "id":"8",
             "name":"Acclaim Hoop Earrings",
             "description":"",
-            "price":"$20.00",
+            "price":20.00,
             "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101105-1_1_823x.jpg?v=1659449763",
             "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101105-4_1_823x.jpg?v=1659449765",
             "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101105-2_1_823x.jpg?v=1659449765"
-        }
+        },
+            {"name":"Evermore Ear Cuff Earrings","id":9,"price":10.00,"imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-2_1.jpg?v=1659450395","imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401014-7-3_823x.jpg?v=1645728002","imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401014-7-2_823x.jpg?v=1645728002"},
+            {"name":"Wired Ear Cuff Earrings","id":10,"price":10.00,"imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101103-2_1.jpg?v=1659450313","imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401022-7-3_823x.jpg?v=1645729199","imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401022-7-2_823x.jpg?v=1645729199"},
+            {"name":"Fern Ear Cuff Earrings","id":11,"price":10.00,"imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101102-1_1_823x.jpg?v=1659450226","imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401020-7-3_823x.jpg?v=1645728959","imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401020-7-2_823x.jpg?v=1645728959"},
+            {"name":"Blossom Ear Cuff Earrings","id":12,"price":10.00,"imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101101-1_1.jpg?v=1659450051","imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401021-7-3_823x.jpg?v=1646420217","imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401021-7-2_823x.jpg?v=1646420217"},
+            {"name":"Barrel Stone Earrings","id":13,"price":18.00,"imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101108-3_1_823x.jpg?v=1659449973","imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401005-7-3__71678_823x.jpg?v=1645115954","imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401005-7-2__27544_823x.jpg?v=1645115956"},
+            {"name":"Ball Stud Earrings | Gold","id":14,"price":12.00,"imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-G-2_1_823x.jpg?v=1659449908","imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401011-7-3_823x.jpg?v=1646049249","imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401011-7-2_823x.jpg?v=1646049249"},
+            {
+                "id":15,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-2_1.jpg?v=1659450395",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-3_1_823x.jpg?v=1659450395",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-1_1.jpg?v=1659450395",
+                "name":"Evermore Ear Cuff Earrings",
+                "price":10.00
+            },
+            {
+                "id":16,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101103-2_1_493x.jpg?v=1659450313",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101103-3_1_493x.jpg?v=1659450313",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101103-1_1_493x.jpg?v=1659450313",
+                "name":"Wired Ear Cuff Earrings",
+                "price":10.00
+            },
+            {
+                "id":17,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101102-1_1_493x.jpg?v=1659450226",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101102-4_1_493x.jpg?v=1659450231",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101102-2_1_493x.jpg?v=1659450231",
+                "name":"Fern Ear Cuff Earrings",
+                "price":10.00
+            }
+            ,
+            {
+                "id":18,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101108-3_1_493x.jpg?v=1659449973",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101108-4_1_493x.jpg?v=1659449973",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101108-1_1_493x.jpg?v=1659449973",
+                "name":"Barrel Stone Earrings",
+                "price":18.00
+            },
+            {
+                "id":19,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-G-2_1_493x.jpg?v=1659449908",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-G-3_1_493x.jpg?v=1659449908",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-G-1_1_493x.jpg?v=1659449908",
+                "name":"Ball Stud Earrings | Gold",
+                "price":12.00
+            },
+            {
+                "id":20,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101105-1_1_493x.jpg?v=1659449763",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101105-4_1_493x.jpg?v=1659449765",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101105-2_1_493x.jpg?v=1659449765",
+                "name":"Acclaim Hoop Earrings",
+                "price":20.00
+            },
+            {
+                "id":21,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101106-G-1_1_493x.jpg?v=1659449836",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101106-G-4_1_493x.jpg?v=1659449841",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101106-G-2_1_493x.jpg?v=1659449841",
+                "name":"Classic Stone Stud Earrings | Gold",
+                "price":12.00
+            },{
+                "id":22,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101099-S-2_1_493x.jpg?v=1659449657",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101099-S-3_1_493x.jpg?v=1659449657",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101099-S-1_1_493x.jpg?v=1659449657",
+                "name":"Sunnyside Stud Earrings | Silver",
+                "price":12.00
+            },{
+                "id":23,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101099-G-1_1_493x.jpg?v=1659449581",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101099-G-4_1_493x.jpg?v=1659449581",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101099-G-3_1_493x.jpg?v=1659449581",
+                "name":"Sunnyside Stud Earrings | Gold",
+                "price":14.00
+            },
+            {
+                "id":24,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101098-2_1_493x.jpg?v=1659449488",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101098_M_493x.jpg?v=1661279081",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101098-1_1_493x.jpg?v=1661279081",
+                "name":"Lace Flower Drop Earrings",
+                "price":20.00
+            },
+            {
+                "id":25,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101097-1_1_493x.jpg?v=1659449407",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101097-3_1_493x.jpg?v=1659449410",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101097-2_1_493x.jpg?v=1659449410",
+                "name":"Nomad Hoop Earrings",
+                "price":18.00
+            },
+            {
+                "id":26,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101096-2_1_493x.jpg?v=1659449305",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101096-3_1_493x.jpg?v=1659449305",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101096-1_1_493x.jpg?v=1659449305",
+                "name":"Palm Drop Hoop Earrings",
+                "price":16.00
+            },
+            {
+                "id":27,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401041-1_493x.jpg?v=1659449145",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401041-3_493x.jpg?v=1659449166",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401041-2_493x.jpg?v=1659449166",
+                "name":"Evermore Adjustable Ring",
+                "price":14.00
+            },
+            {
+                "id":28,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401040-1_493x.jpg?v=1659448216",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401040-3_493x.jpg?v=1659448217",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401040-2_493x.jpg?v=1659448217",
+                "name":"Wreath Adjustable Ring",
+                "price":14.00
+            },
+            {
+                "id":29,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401038-1_493x.jpg?v=1659448105",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401038-3_493x.jpg?v=1659448110",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401038-2_493x.jpg?v=1659448110",
+                "name":"Infinity Adjustable Ring",
+                "price":14.00
+            },
+            {
+                "id":30,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401037-1_493x.jpg?v=1659448039",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401037-3_493x.jpg?v=1659448041",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401037-2_493x.jpg?v=1659448041",
+                "name":"Shocker Adjustable Ring",
+                "price":14.00
+            },
+            {
+                "id":31,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401036-1_493x.jpg?v=1659447986",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401036-3_493x.jpg?v=1659447987",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401036-2_493x.jpg?v=1659447987",
+                "name":"Maiden Adjustable Ring",
+                "price":14.00
+            },
+            {
+                "id":32,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401035-2_493x.jpg?v=1659447930",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401035-3_493x.jpg?v=1659447930",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401035-1_493x.jpg?v=1659447930",
+                "name":"Feather Adjustable Ring",
+                "price":14.00
+            },
+            {
+                "id":33,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401034-1_493x.jpg?v=1659447861",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401034-3_493x.jpg?v=1659447867",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401034-2_493x.jpg?v=1659447867",
+                "name":"Wired Adjustable Ring",
+                "price":14.00
+            },
+            {
+                "id":34,
+                "imageUrl_1":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401031-1_493x.jpg?v=1659447661",
+                "imageUrl_2":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401031-3_493x.jpg?v=1659447662",
+                "imageUrl_3":"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401031-2_493x.jpg?v=1659447662",
+                "name":"Twig Adjustable Ring",
+                "price":16.00
+            }
     ]
+
+
+        
+         
+    
+
+   
 }
+
+
+
