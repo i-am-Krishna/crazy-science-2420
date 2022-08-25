@@ -1,6 +1,7 @@
 import React from 'react'
 import NewProducts from '../Pages/NewProducts'
 
+
 const MainRoutes = () => {
   return (
     <div>
