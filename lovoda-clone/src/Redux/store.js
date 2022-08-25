@@ -4,9 +4,5 @@ import {reducer as auth} from './Auth/reducer';
 import {reducer as newPage} from './NewPage/reducer'
 import {reducer as homepage} from "./HomePage/reducer"
 import {reducer as allPage} from './Allpage/reducer'
-
-const rootReducer = combineReducers({auth,newPage,homepage})
-
-const rootReducer = combineReducers({auth,newPage,allPage})
-
+const rootReducer = combineReducers({auth,newPage,homepage,allPage})
 export const store = legacy_createStore(rootReducer,applyMiddleware(thunk))
