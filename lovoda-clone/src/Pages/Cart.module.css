@@ -1,0 +1,134 @@
+.cart{
+    display: flex;
+    border: 0px solid red;
+    height: 100px;
+    margin-top:2%;
+    justify-content: space-around;
+}
+.textContainer{
+    border:0px solid blue;
+    justify-content: space-between;
+    height: 100px;
+    width: 19%;
+    
+}
+.quantity p{
+    border: 0px solid gold;
+    margin-left: -300px;
+}
+.textContainer h1{
+    justify-content: space-between;
+}
+.textContainerTwo{
+    display: flex;
+    justify-content: space-around;
+
+}
+.hRow{
+    width:95%;
+    margin: auto;
+    height: 1px;
+    background-color: rgb(91, 88, 88);
+    border: 1px solid rgb(20, 19, 20);
+}
+.counter{
+    border: 2px solid black;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    margin: auto;
+}
+
+.Counterdivf{
+border: 2px solid rgb(19, 19, 20);
+height: 50px;
+margin-left:-20%;
+width: 15%;
+}
+.Counterdiv{
+    border: 2px solid rgb(21, 21, 21);
+    height: 50px;
+    width: 15%;
+}
+.btn{
+    border: 0px solid red;
+    width: 30%;
+    margin: auto;
+    padding-left: 620px;
+    margin-top:20%;
+}
+.btn button {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 70%;
+    font-size: 20px;
+    
+
+}
+.btn2 img{
+    height: 60px;
+    background-color: blue;
+
+}
+.btn2 button{
+    background-color: rgb(60, 60, 160);
+    height: 63px;
+
+}
+
+.btn3 button{
+    background-color: rgb(254, 207, 52);
+    height: 63px;
+}
+
+.btn3 img{
+height:48px;
+background-color:none;
+}
+.btn5 button{
+    background-color: rgb(20, 20, 20);
+    height: 63px;
+}
+.btn5 img{
+    height: 60px;
+}
+.FeaturedContainer {
+    border: 0px solid red;
+    width: 70%;
+    margin: auto;
+    margin-top:5%;
+
+}
+.FeaturedContainer h3{
+    margin: none;
+    border: 0px solid blue;
+    width: 30%;
+    font-size: 20px;
+}
+.imageContainer{
+    border: 0px solid teal;   
+     margin: auto;
+     width: 90%;
+     display: flex;
+
+}
+.imageContainer div{
+    border: 0px solid rgb(51, 223, 223);
+    margin: none;
+    width: 50%;
+}
+.imageContainer img{
+    height: 226px;
+    width: 90%;
+}
+
+.viewbtn button{
+background-color: black;
+color: white;
+height: 40px;
+width: 10%;
+font-size: 15px;
+margin-top: 0.5%;
+}
