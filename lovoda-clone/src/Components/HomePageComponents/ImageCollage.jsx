@@ -7,7 +7,7 @@ export const ImageCollage = () => {
         <div>
             <div className='shopfeed'>SHOP THE FEED</div>
             <br />
-            <div><p >Tag us on @LovodaShop or #Lovoda</p></div>
+            <div><p className='tagus'>Tag us on @LovodaShop or #Lovoda</p></div>
             <br /><br /><br />
             <div className='followus'>Follow us on instagram @lovodashop</div>
         </div>
@@ -17,9 +17,6 @@ export const ImageCollage = () => {
                 <div className='third_container'>
                     <div className='cont'>
                         <img className='image' src="https://scontent.cdninstagram.com/v/t51.2885-15/296817431_163686646176589_9025849763226676913_n.jpg?stp=dst-jpg_e35_s320x320&_nc_ht=scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=31vO6RMPmdsAX_t5e3t&edm=AMO9-JQAAAAA&ccb=7-5&oh=00_AT8jA32sE6HciSKr3WBQ81w9HQ3RCSI2LOMNmiHgEHzMhg&oe=6307B077&_nc_sid=b9f2ee" alt="" />
-                        <div className='middle'>
-                            <div className='text'>SHOP IT</div>
-                        </div>
                     </div>
                     <div> 
                         <img src="https://scontent.cdninstagram.com/v/t51.2885-15/292524868_710978926641964_7932405403123906811_n.jpg?stp=dst-jpg_e35_s320x320&_nc_ht=scontent.cdninstagram.com&_nc_cat=104&_nc_ohc=bq9tp72oaPgAX-9SVM-&edm=AMO9-JQAAAAA&ccb=7-5&oh=00_AT-49mWDav3uhFwM6DaU6V5cG7YqgB2FYFjCAcwEzML6tg&oe=6307B489&_nc_sid=b9f2ee" alt="" />
