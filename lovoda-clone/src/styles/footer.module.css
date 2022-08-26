@@ -1,0 +1,283 @@
+#fcontainer {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#ftleftside {
+    width: 50%;
+    text-align: left;
+}
+
+#ftrightside {
+    width: 50%;
+    text-align: left;
+}
+a{
+    text-decoration: none;
+}
+
+#ftleftside h3,
+#ftrightside h3,
+#emailheading h3 {
+    margin-top: 30px;
+    font-size: 17px;
+    line-height: 23px;
+    color: #121212;
+    font-weight: 400;
+}
+
+#ftleftside a {
+    display: block;
+    font-size: 14px;
+    line-height: 25px;
+    color: #1212129e;
+    margin-bottom: 10px;
+    border-bottom: 1px solid transparent;
+}
+
+#ftleftside a:hover {
+    cursor: pointer;
+    color: #121212;
+    border: none;
+    border-bottom: 1px solid transparent;
+}
+
+#needtotalk {
+    font-size: 16px;
+    line-height: 29px;
+    color: rgba(18, 18, 18, 0.75);
+    font-weight: 400;
+}
+
+#emailpara {
+    font-size: 16px;
+    line-height: 29px;
+    color: rgba(18, 18, 18, 0.75);
+    font-weight: 700;
+}
+
+#phonepara {
+    font-size: 16px;
+    line-height: 29px;
+    color: rgba(18, 18, 18, 0.75);
+    font-weight: 700;
+}
+
+#textmsgpara {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 29px;
+    color: rgba(18, 18, 18, 0.75);
+    font-weight: 400;
+}
+
+#emailheading {
+    width: 70%;
+    margin: auto;
+}
+
+#emailsocialicon {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+#emailinput {
+    width: 300px;
+    height: 45px;
+    font-size: 16px;
+    padding: 0px 15px;
+}
+
+#emailinput:hover {
+    outline: 1px solid #121212;
+}
+
+.fa {
+    width: 50px;
+    margin-right: 20px;
+}
+
+#allicons .fa:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#endpaymentbar {
+    margin-top: 50px;
+    width: 100%;
+    height: 37px;
+}
+
+#payicons {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+#payicons div {
+    width: 36px;
+    height: 22px;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+}
+
+#payicons img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 10px;
+    line-height: 17px;
+    color: rgba(18, 18, 18, 0.75);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#copyright span:hover {
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid #121212;
+}
+
+@media all and (max-width: 1024px) {
+    #fcontainer {
+        width: 90%;
+    }
+
+    #emailheading {
+        width: 90%;
+    }
+
+    #emailsocialicon {
+        width: 90%;
+    }
+
+    #payicons {
+        width: 90%;
+    }
+}
+
+@media all and (min-width: 427px) and (max-width: 768px) {
+    #fcontainer {
+        width: 90%;
+    }
+
+    #emailheading {
+        width: 90%;
+    }
+
+    #emailsocialicon {
+        width: 90%;
+    }
+
+    #payicons {
+        width: 90%;
+    }
+
+    #needtotalk {
+        font-size: 14px;
+    }
+
+    #emailpara {
+        font-size: 14px;
+    }
+
+    #phonepara {
+        font-size: 14px;
+    }
+
+    #textmsgpara {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 426px) {
+    #fcontainer {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    #emailheading {
+        width: 90%;
+    }
+
+    #emailsocialicon {
+        width: 90%;
+    }
+
+    #payicons {
+        width: 90%;
+    }
+
+    #emailheading {
+        text-align: center;
+    }
+
+    #emailsocialicon {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    #payicons {
+        flex-wrap: wrap;
+    }
+
+    #endpaymentbar {
+        margin-top: 40px;
+    }
+
+    #copyright {
+        margin-top: 40px;
+    }
+
+    #needtotalk {
+        font-size: 14px;
+    }
+
+    #emailpara {
+        font-size: 14px;
+    }
+
+    #phonepara {
+        font-size: 14px;
+    }
+
+    #textmsgpara {
+        font-size: 14px;
+    }
+}
+
+.searchheader{
+    text-align: center;
+    margin: auto;
+}
+
+.searchbox{
+    display: flex;
+    border: 2px solid black;
+    width: 400px;
+    margin: auto;
+}
+#searchboxemail{
+    border-right: none;
+    width: 86%;
+    height: 52px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.lensimage{
+    width: 14%;
+}

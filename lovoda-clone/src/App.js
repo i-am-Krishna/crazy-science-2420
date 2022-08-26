@@ -1,11 +1,13 @@
 import MainRoutes from './Routes/MainRoutes';
 import Navbar from './Components/Navbar'
+// import PaymentSuccess from './Pages/PaymentSuccess';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar/>
      <MainRoutes/>
+     {/* <PaymentSuccess/> */}
     </div>
   );
 }

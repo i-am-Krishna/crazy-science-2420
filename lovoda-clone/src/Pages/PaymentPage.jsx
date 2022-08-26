@@ -2,10 +2,9 @@ import styles from "./Payment.module.css";
 import { GoChevronRight } from "react-icons/go";
 import React from "react";
 import { BiCheckbox } from "react-icons/bi";
-import { GoChevronDown } from "react-icons/go";
 import { GoChevronLeft } from "react-icons/go";
-import { IoIosArrowDown } from "react-icons/io";
 import { GoQuestion } from "react-icons/go";
+import { Link } from "react-router-dom";
 const PaymentPage = () => {
   const options = [
     {
@@ -62,18 +61,28 @@ const PaymentPage = () => {
         <div className={styles.firstHead}>
           <h1>LOVODA</h1>
           <div className={styles.PaymentSecondHead}>
+            <div style={{display:"flex",justifyContent:"center"  , alignItems:"center"}}>
             <p>Cart</p>
-            <GoChevronRight style={{ marginTop: "17px" }} />
+            <GoChevronRight style={{paddingTop:"4px"}}/>
+            </div>
 
+            <div style={{display:"flex",justifyContent:"center"  ,width:"120px", alignItems:"center"}}>
             <p>Information</p>
-            <GoChevronRight style={{ marginTop: "17px" }} />
-
+            <GoChevronRight style={{paddingTop:"4px"}}/>
+            </div>
+            
+            
+            <div style={{display:"flex",justifyContent:"center" ,width:"120px" , alignItems:"center"}}>
             <p>Shopping</p>
-            <GoChevronRight style={{ marginTop: "17px" }} />
+            <GoChevronRight style={{paddingTop:"4px"}}/>
+            </div>
 
+            <div style={{display:"flex",justifyContent:"center" ,width:"120px" , alignItems:"center"}}>
             <p>Payment</p>
-            <GoChevronRight style={{ marginTop: "17px" }} />
-          </div>
+            <GoChevronRight style={{paddingTop:"4px"}}/>
+            </div>
+
+                     </div>
           <br />
 
           <div className={styles.btn}>
@@ -216,7 +225,9 @@ const PaymentPage = () => {
                 <GoQuestion style={{ marginLeft: "-2.5%", fontSize: "16px" }} />
                 <br />
                 <br />
+
                 <div className={styles.ReturnCart}>
+
                   <GoChevronLeft
                     style={{
                       marginLeft: "20%",
@@ -224,7 +235,11 @@ const PaymentPage = () => {
                       marginTop: "1.2%",
                     }}
                   />
-                  <p>Return to Cart</p>
+                  <p>
+                      <Link to='/cart' style={{textDecoration:"none"}} >
+                 Return to Cart 
+                  </Link>
+                  </p>
                   <button>Continue to Shipping</button>
                 </div>
                 <br />

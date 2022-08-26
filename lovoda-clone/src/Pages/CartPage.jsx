@@ -1,22 +1,16 @@
 import React from "react";
 import styles from "./Cart.module.css";
-import { GrFormAdd } from "react-icons/gr";
-import { GrFormSubtract } from "react-icons/gr";
 import { useState } from "react";
-import { RiDeleteBin6Line } from "react-icons/ri";
 import AddedProduct from "./AddedProduct";
 import axios from "axios"
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 const CartPage = () => {
   const [cartData, setCartData] = useState([])
   const [total, setTotal] = useState(0);
   const [quantity, setQuantity] = useState(1)
-  // const incCount = () => {
-  //   setCount(count + 1);
-  // };
-
-  const getCart = () => {
-    axios.get("http://localhost:7000/Cart")
+   const getCart = () => {
+    axios.get("http://localhost:8080/Cart")
     .then((r) => {
       setCartData(r.data)
       
@@ -31,7 +25,7 @@ const CartPage = () => {
 
   const handleDelete = (id) => {
     console.log(id);
-    axios.delete(`http://localhost:7000/Cart/${id}`)
+    axios.delete(`http://localhost:8080/Cart/${id}`)
     .then(() => {
       getCart();
     })
@@ -40,63 +34,19 @@ const CartPage = () => {
   useEffect(() => {
     getCart();
   },[])
-
-  // const decCount = () => {
-  //   setCount(count - 1);
-  // };
+ 
   return (
     <>
-      {/* <div className={styles.ProductContainer}> */}
         <div className={styles.ProductContainerTwo}>
           <div className={styles.Yourcart}>Your Cart</div>
           <div>Continue to Shipping</div>
         </div>
         <hr style={{ width: "70%" }}></hr>
-        {/* <AddedProduct/> */}
         {
           cartData.length > 0 && cartData.map((item) => {
             return <AddedProduct setTotal={setTotal} total={total} data={item} setQuantity={setQuantity} deleteCartData={handleDelete} key={item.id}/>
           })
         }
-        {/* <div className={styles.counterContainer}>
-          <div className={styles.Productimg}>
-            <p>Product</p>
-          </div>
-          <div>
-            <p>QUANTITY</p>
-          </div>
-          <div>
-            <p>TOTAL</p>
-          </div>
-        </div>
-        <div className={styles.TotalContainer}>
-          <div className={styles.imageContainer}>
-            <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101105-1_1_300x.jpg?v=1659449763" />
-          </div>
-          <div className={styles.CounterF}>
-            <div className={styles.minus}>
-              <button onClick={decCount}>
-                <GrFormSubtract style={{ fontSize: "20px" }} />
-              </button>
-            </div>
-            <div className={styles.CountSec}>
-              <h1>{count}</h1>
-            </div>
-            <div className={styles.plus}>
-              <button onClick={incCount}>
-                <GrFormAdd style={{ fontSize: "20px" }} />
-              </button>
-            </div>
-            <div className={styles.Delete}>
-              <RiDeleteBin6Line
-                styles={{ fontSize: "35px", marginTop: "20%" }}
-              />
-            </div>
-          </div>
-          <div>$180</div>
-        </div>
-      </div> */}
-
       <div className={styles.btn}>
         <div>
           <p>{`Subtotal $ ${total}`}</p>
@@ -108,7 +58,7 @@ const CartPage = () => {
         <div>Taxes and shipping calculated at checkout</div>
         <div>
           <br />
-          <button>check out</button>
+          <Link to="/cart/payment"><button>check out</button></Link>
         </div>
         <br />
         <div className={styles.btn2}>
@@ -140,7 +90,6 @@ const CartPage = () => {
         </div>
         <br />
       </div>
-
       <div className={styles.FeaturedContainer}>
         <div>
           <h3>Featured Collection</h3>
@@ -155,7 +104,6 @@ const CartPage = () => {
             <p>10mm Palette Earrings (14k Gold)</p>
             <p>$12.00</p>
           </div>
-
           <div>
             <img
               src={
@@ -165,7 +113,6 @@ const CartPage = () => {
             <p>10mm Palette Earrings (14k Rose Gold)</p>
             <p>$12.00</p>
           </div>
-
           <div>
             <img
               src={
@@ -175,7 +122,6 @@ const CartPage = () => {
             <p>10mm Palette Earrings | Bubble Gum Pink (14k)</p>
             <p>$12.00</p>
           </div>
-
           <div>
             <img
               src={

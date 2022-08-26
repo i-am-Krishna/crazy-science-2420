@@ -7,22 +7,45 @@ import { BsHeart } from 'react-icons/bs'
 
 
 import './allPage.css'
+import FilterSort from './Filter&Sort'
+import { useLocation, useSearchParams } from 'react-router-dom'
 
 const AllPages = () => {
-    let dispatch=useDispatch()
+    const dispatch=useDispatch()
+    const location = useLocation()
+    const [searchParams] = useSearchParams()
+
     let mydata=useSelector((store)=>store.allPage.arr)
     
 
 
 
     useEffect(()=>{
-         dispatch(allDatas)
-    },[])
+      if(location || mydata.length === 0){
+          const sortBy = searchParams.get('sortBy')
+          const queryParams = {
+              params:{
+                  _sort: sortBy && "price",
+                  _order: sortBy,
+              }
+          }
+          dispatch(allDatas(queryParams))
+      }
+  },[location.search])
+
+
+
+    // useEffect(()=>{
+    //      dispatch(allDatas)
+    // },[])
  
   return (
+    <>
+     <p className='product_title'>All Products</p>
+    <div><FilterSort length={mydata.length}/></div>
     <div className='new_product11'>  {mydata.map((elem)=>   (   
-        
-        <div className='single_new_product11'>
+      
+      <div className='single_new_product11' key={elem.id}>
         <div className='card'>
         <img src={elem.imageUrl_1} alt={elem.name} />
         <img src={elem.imageUrl_2} alt={elem.name} className="img-top"/>
@@ -32,9 +55,10 @@ const AllPages = () => {
         <p className='single_product_price'>${elem.price}.00</p>
         </div>
        
-  ))}
+       ))}
 
       </div>
+       </>
   )
 }
 

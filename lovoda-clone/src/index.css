@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500&display=swap');
+
+
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+   /* margin: 0; 
+   padding: 0; */
+   /* text-decoration: none; */
+   color: black;
+   font-family: 'Assistant', sans-serif;
+
+
+  /* box-sizing: border-box; */
 }
 body {
   margin: 0;

@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import './filterSort.css'
 import { useSelector } from 'react-redux';
 import { getNewPageData } from '../Redux/NewPage/action';
-const FilterSort = () => {
+const FilterSort = ({length}) => {
 
   const [searchParams,setSearchParams] = useSearchParams()
   const urlSort = searchParams.get("sortBy");
@@ -42,7 +42,7 @@ if(sortBy){
             <option value="desc" defaultChecked={sortBy === 'desc'}>Price, high to low</option>
           </select>
           </label>
-          <span  style={{padding:"0 20px"}}>  {products.length} products</span>
+          <span  style={{padding:"0 20px"}}>  {length} products</span>
           
         </div>
     </div>
