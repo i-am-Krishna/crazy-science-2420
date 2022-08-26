@@ -1,37 +1,8 @@
-import { GET_ALLPAGE_REQUEST,GET_ALLPAGE_SUCCESS,GET_ALLPAGE_FAILURE } from "./actionType";
-
+import * as types from "./actionType";
 import axios from 'axios'
-
-
-let req=()=>{
-    return{
-        type:GET_ALLPAGE_REQUEST
-    }
+export const allDatas = (params)=>(dispatch)=>{
+    dispatch({type:types.GET_ALLPAGE_REQUEST})
+    return axios.get('http://localhost:8080/shopAll',params)
+    .then((res)=>dispatch({type:types.GET_ALLPAGE_SUCCESS,payload:res.data}))
+    .catch((err)=>dispatch({type:types.GET_ALLPAGE_FAILURE,payload:err}))
 }
-let suc=(payload)=>{
-    return{
-        type:GET_ALLPAGE_SUCCESS,payload
-    }
-}
-
-let fail=()=>{
-    return{
-        type:GET_ALLPAGE_FAILURE
-    }
-}
-
-let allDatas=(dispatch)=>{
-    dispatch(req())
-    axios.get("http://localhost:8080/shopAll")
-    .then((res)=>{
-        
-       dispatch(suc(res.data)) 
-    })
-    .catch((err)=>{
-        dispatch(fail())
-    })
-    
-}
-
-
-export {allDatas}
