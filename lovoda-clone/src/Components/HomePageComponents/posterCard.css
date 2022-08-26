@@ -1,17 +1,27 @@
 
 .centered {
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(145, 145, 145);
+    text-align: center;
 }
 
 .shopAll_button{
     color: 255,255,255;
+    border: solid 1px rgb(145, 145, 145);
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    margin-left: 110px;
+    padding: 15px;
 }
 
+.centered>h2{
+    font-size: 3rem;
+}
 .bigimage{
-    opacity: 0.5;
+    width: 100%;
+    height: 100%;
 }
-
