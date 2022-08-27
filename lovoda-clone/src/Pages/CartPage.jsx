@@ -5,39 +5,41 @@ import { GrFormSubtract } from "react-icons/gr";
 import { useState } from "react";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import AddedProduct from "./AddedProduct";
-import axios from "axios";
+import axios from "axios"
 import { useEffect } from "react";
 const CartPage = () => {
-  const [cartData, setCartData] = useState([]);
+  const [cartData, setCartData] = useState([])
   const [total, setTotal] = useState(0);
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(1)
   // const incCount = () => {
   //   setCount(count + 1);
   // };
 
   const getCart = () => {
-    axios.get("http://localhost:7000/Cart").then((r) => {
-      setCartData(r.data);
-
+    axios.get("http://localhost:7000/Cart")
+    .then((r) => {
+      setCartData(r.data)
+      
       console.log(r.data);
       let tot = 0;
-      for (let i = 0; i < r.data.length; i++) {
-        tot += r.data[i].price;
+      for(let i=0; i<r.data.length; i++){
+        tot += r.data[i].price
       }
-      setTotal(tot);
-    });
-  };
+      setTotal(tot)
+    })
+  }
 
   const handleDelete = (id) => {
     console.log(id);
-    axios.delete(`http://localhost:7000/Cart/${id}`).then(() => {
+    axios.delete(`http://localhost:7000/Cart/${id}`)
+    .then(() => {
       getCart();
-    });
-  };
+    })
+  }
 
   useEffect(() => {
     getCart();
-  }, []);
+  },[])
 
   // const decCount = () => {
   //   setCount(count - 1);
@@ -45,26 +47,18 @@ const CartPage = () => {
   return (
     <>
       {/* <div className={styles.ProductContainer}> */}
-      <div className={styles.ProductContainerTwo}>
-        <div className={styles.Yourcart}>Your Cart</div>
-        <div>Continue to Shipping</div>
-      </div>
-      <hr style={{ width: "70%" }}></hr>
-      {/* <AddedProduct/> */}
-      {cartData.length > 0 &&
-        cartData.map((item) => {
-          return (
-            <AddedProduct
-              setTotal={setTotal}
-              total={total}
-              data={item}
-              setQuantity={setQuantity}
-              deleteCartData={handleDelete}
-              key={item.id}
-            />
-          );
-        })}
-      {/* <div className={styles.counterContainer}>
+        <div className={styles.ProductContainerTwo}>
+          <div className={styles.Yourcart}>Your Cart</div>
+          <div>Continue to Shipping</div>
+        </div>
+        <hr style={{ width: "70%" }}></hr>
+        {/* <AddedProduct/> */}
+        {
+          cartData.length > 0 && cartData.map((item) => {
+            return <AddedProduct setTotal={setTotal} total={total} data={item} setQuantity={setQuantity} deleteCartData={handleDelete} key={item.id}/>
+          })
+        }
+        {/* <div className={styles.counterContainer}>
           <div className={styles.Productimg}>
             <p>Product</p>
           </div>
@@ -108,14 +102,12 @@ const CartPage = () => {
           <p>{`Subtotal $ ${total}`}</p>
         </div>
         <div className={styles.p2div}>
-          <p>or 4 interest-free payments of $ 45.00 with</p>{" "}
-        </div>
+        <p>or 4 interest-free payments of $ 45.00 with</p> </div>
         <div className={styles.afterPay}>
           <img src={"https://www.altfi.com/images/companies/afterpay.png"} />
         </div>
         <div className={styles.p2div12}>
-          <p>Taxes and shipping calculated at checkout</p>
-        </div>
+        <p>Taxes and shipping calculated at checkout</p></div>
         <div>
           <br />
           <button>check out</button>

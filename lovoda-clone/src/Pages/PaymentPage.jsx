@@ -2,12 +2,17 @@ import styles from "./Payment.module.css";
 import { GoChevronRight } from "react-icons/go";
 import React from "react";
 import { BiCheckbox } from "react-icons/bi";
+import { GoChevronDown } from "react-icons/go";
 import { GoChevronLeft } from "react-icons/go";
+import { IoIosArrowDown } from "react-icons/io";
+import { GoQuestion } from "react-icons/go";
 import { useState } from "react";
 const PaymentPage = () => {
   const [states, setStates] = useState("");
   const [title, setTitle] = useState("");
-
+  const [datainput, setDatainput] =useState("");
+  const [addreinput, setAddress] = useState("");
+console.log(datainput)
   return (
     <>
       <div className={styles.PaymentInfo}>
@@ -72,15 +77,17 @@ const PaymentPage = () => {
               </div>
             </div>
             <div className={styles.inputFis}>
-              <input
+              <input onChange={(e)=> {setDatainput(e.target.value)
+               localStorage.setItem("emaildata", datainput)
+      }}
                 type="text"
-                name="name"
+                email="email"
                 placeholder="Email or mobile phone number"
               />
             </div>
 
             <div className={styles.Emaildiv}>
-              <BiCheckbox />
+              <input type="checkbox"/>
               <p>Email me with news and offers</p>
             </div>
           </div>
@@ -118,7 +125,9 @@ const PaymentPage = () => {
             <br />
 
             <div className={styles.InputOne}>
-              <input type="text" placeholder="Address" />
+              <input type="text" placeholder="Address" onChange={(e)=>{ setAddress(e.target.value)
+               localStorage.setItem("addressdata",addreinput)
+              }} />
             </div>
             <br />
 
@@ -175,6 +184,9 @@ const PaymentPage = () => {
             </div>
           </div>
         </div>
+
+          {/* second box */}
+
 
         <div className={styles.PaymentInfoSecond}>
           <div className={styles.SecondContainerT}>
