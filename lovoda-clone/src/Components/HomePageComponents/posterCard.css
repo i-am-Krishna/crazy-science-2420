@@ -1,7 +1,7 @@
 
 .centered {
     position: absolute;
-    top: 75%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(145, 145, 145);
@@ -10,12 +10,13 @@
 
 .shopAll_button{
     color: 255,255,255;
-    border: solid 1px rgb(145, 145, 145);
+    border: solid 2px rgb(145, 145, 145);
     height: 50px;
     width: 100px;
     text-align: center;
     margin-left: 110px;
-    padding: 15px;
+    padding-top: 15px;
+    /* margin-top: -50px; */
 }
 
 .centered>h2{

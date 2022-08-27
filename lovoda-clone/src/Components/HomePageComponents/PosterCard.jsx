@@ -1,5 +1,6 @@
 import React from 'react'
 import "./posterCard.css"
+import { Link } from 'react-router-dom'
 
 export const PosterCard = () => {
   return (
@@ -8,7 +9,9 @@ export const PosterCard = () => {
         <div className='centered'> 
             <h2>NEW NEW NEW</h2>
             <p>Check out the new beauties</p><br /><br />
+            <Link to={'/all_products'}>
             <div className='shopAll_button'>Shop All</div>
+            </Link>
         </div>
     </div>
   )
