@@ -1,17 +1,21 @@
 import React from 'react'
 import './productDetails.css'
-import {Link, useParams} from 'react-router-dom'
+import {Link, Navigate, useNavigate, useParams} from 'react-router-dom'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import {useDispatch, useSelector} from 'react-redux'
 import { allDatas } from '../../Redux/Allpage/action';
 import {TiMessages} from 'react-icons/ti'
 import {AiOutlineStar} from 'react-icons/ai'
+import axios from 'axios';
+import { postTodosRequest, postTodosSuccess, setCartData, } from '../../Redux/App/action';
 const ProductDetails = () => {
   const {id} = useParams();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [currentProduct,setCurrentProduct] = useState({});
   const [number,setNumber] = useState(1);
+  const [data,setData] = useState([])
 
 const product = useSelector((store)=> store.allPage.arr);
 
@@ -28,7 +32,24 @@ if(id){
 }
 },[id,product])
 
-console.log(currentProduct)
+ 
+
+const handleCartClick=({currentProduct})=>{
+
+//  dispatch(setCartData(currentProduct)).then((res)=>setData(res.data)).then(()=> navigate('/cart'))
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
   return (
     <>
     <div className='product_main_section'> 
@@ -87,7 +108,7 @@ console.log(currentProduct)
 
     <div className='button_box'>
       <Link to={'/cart'}>
-      <button className='cart_buttons'>Add to cart</button>
+      <button onClick={handleCartClick} className='cart_buttons'>Add to cart</button>
       </Link>
   
       <button className='cart_buttons'>Add to Wishlist</button>

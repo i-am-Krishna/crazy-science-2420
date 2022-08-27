@@ -9,6 +9,7 @@ import RequiredAuth from '../Components/Authentication/RequiredAuth'
 import PaymentSuccess from '../Pages/Alok/PaymentSuccess'
 import Signin from '../Components/Auth/signin'
 import ProductDetails from '../Pages/Krishna/ProductDetails'
+import OrderComplete from '../Pages/Alok/OrderComplete'
 
 
 const MainRoutes = () => {
@@ -30,9 +31,19 @@ const MainRoutes = () => {
         <PaymentPage/>
             </RequiredAuth>
         }/>
+        <Route path='/cart/information/shipping' element={
+            <RequiredAuth>
+        <PaymentPage/>
+            </RequiredAuth>
+        }/>
         <Route path='/cart/information/shipping/payment' element={
             <RequiredAuth>
         <PaymentSuccess/>
+            </RequiredAuth>
+        }/>
+        <Route path='/cart/information/shipping/payment/order_successful' element={
+            <RequiredAuth>
+        <OrderComplete/>
             </RequiredAuth>
         }/>
     </Routes>

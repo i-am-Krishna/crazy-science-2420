@@ -8,10 +8,9 @@ import OrderComplete from './Pages/Alok/OrderComplete';
 function App() {
   return (
     <div>
-      {/* <Navbar/> 
+       <Navbar/> 
       <MainRoutes/>
-      <Footer/> */}
-      <OrderComplete/>
+      <Footer/> 
     </div>
   );
 }
