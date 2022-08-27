@@ -4,18 +4,24 @@ import {BsFillRecordCircleFill} from 'react-icons/bs'
 import {RiVisaLine} from 'react-icons/ri'
 import {GrAmex} from 'react-icons/gr'
 import {FaCcDiscover} from 'react-icons/fa'
-
+import { Link } from 'react-router-dom'
+import './paymentSuccess.css'
 const PaymentSuccess = () => {
   return (
-    <div>
-      <div style={{display:"flex"}}>
+    <div >
+      <div className='payment_success'  style={{display:"flex"
+  }}>
          <div style={{width:"50%"}}>
           <br />
             <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/files/04122019_logo2.png?187" alt="logo" style={{height:"60px",width:"120px",marginLeft:"25%"}} />
             <div style={{display:"flex"}}>
-              <p style={{marginLeft:"24%",color:"blue",fontWeight:"lighter",fontSize:"15px"}}>Cart   </p>
+              <p style={{marginLeft:"24%",color:"blue",fontWeight:"lighter",fontSize:"15px"}}>Cart</p>
               <AiOutlineRight style={{marginTop:"3.5px",marginLeft:"10px"}}/>
-              <p style={{marginLeft:"10px",color:"blue",fontWeight:"lighter",fontSize:"15px"}}>Information   </p>
+              <p style={{marginLeft:"10px",color:"blue",fontWeight:"lighter",fontSize:"15px"}}>
+                <Link to={'/cart/information'}>
+                Information
+                </Link>
+                   </p>
               <AiOutlineRight style={{marginTop:"3.5px",marginLeft:"10px"}}/>
               <p style={{marginLeft:"10px",color:"blue",fontWeight:"lighter",fontSize:"15px"}}>Shipping  </p>
               <AiOutlineRight style={{marginTop:"3.5px",marginLeft:"10px"}}/>
@@ -134,7 +140,9 @@ const PaymentSuccess = () => {
             <p style={{color:"blue"}}>Terms of service</p>
        </div>
          </div>
-         <div></div>
+         <div>
+          {/* Right side data */}
+         </div>
       </div>
     </div>
   )

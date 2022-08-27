@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from "react-redux";
-import ProductCard from '../Components/HomePageComponents/ProductCard';
-import {getHomePageData} from "../Redux/HomePage/action"
-import { PosterCard } from '../Components/HomePageComponents/PosterCard';
-import { ImageCollage } from '../Components/HomePageComponents/ImageCollage';
+import ProductCard from '../../Components/HomePageComponents/ProductCard';
+import {getHomePageData} from "../../Redux/HomePage/action"
+import { PosterCard } from '../../Components/HomePageComponents/PosterCard';
+import { ImageCollage } from '../../Components/HomePageComponents/ImageCollage';
 import "./homePage.css"
 
 export const HomePage = () => {

@@ -1,13 +1,14 @@
+
 import MainRoutes from './Routes/MainRoutes';
-import Navbar from './Components/Navbar'
-// import PaymentSuccess from './Pages/PaymentSuccess';
+import Navbar from './Components/Header/Navbar'
+import Footer from './Components/footer/footer';
 
 function App() {
   return (
     <div>
-      <Navbar/>
-     <MainRoutes/>
-     {/* <PaymentSuccess/> */}
+      <Navbar/> 
+      <MainRoutes/>
+      <Footer/>
     </div>
   );
 }

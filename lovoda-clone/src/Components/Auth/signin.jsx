@@ -1,8 +1,9 @@
 import React from "react";
-import styles from "../styles/signin.module.css"
+import styles from '../../styles/signin.module.css'
 import { useState } from "react";
-import { useDispatch, useNavigate } from "react-redux/es/exports";
-import { login } from "../Redux/Auth/action";
+import { useDispatch } from "react-redux";
+import { useNavigate , useLocation, Link } from "react-router-dom";
+import { login } from "../../Redux/Auth/action";
 const Signin = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -10,14 +11,14 @@ const Signin = () => {
   const [password, setPassword] = useState("");
 
   const location = useLocation();
-  const comingFrom = loction.state?.from?.pathname || "/";
+  const comingFrom = location.state?.from?.pathname || "/";
 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email && password) {
       dispatch(login({ email, password })).then((r) => {
-        if (r.type === LOGIN_SUCCESS) {
+        if (r === "LOGIN_SUCCESS") {
           navigate(comingFrom, { replace: true });
         }
       });
@@ -79,7 +80,9 @@ const Signin = () => {
           />
           <p id={styles.forgotpass}>Forgot Your Password?</p>
           <input type="submit" id={styles.loginsubmit} value="Sign in" />
-          <p id={styles.createaccount}>Create account</p>
+          <Link to={'/signup'}>
+          <p id={styles.createaccount} style={{textDecoration:"none"}}>Create account</p>
+          </Link>
         </form>
       </div>
     );

@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import './filterSort.css'
 import { useSelector } from 'react-redux';
-import { getNewPageData } from '../Redux/NewPage/action';
+import { getNewPageData } from '../../Redux/NewPage/action';
 const FilterSort = ({length}) => {
 
   const [searchParams,setSearchParams] = useSearchParams()

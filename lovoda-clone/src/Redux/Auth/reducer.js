@@ -2,8 +2,8 @@ import * as types from './actionTypes';
 import {getData,setData} from '../../Utils/localStorage';
 
 const initState = {
-    // isAuth: getData('token') ? true : true,
-    isAuth:true,
+    isAuth: getData('token') ? true : false,
+    // isAuth:true,
     token: getData('token') || '',
     isLoading: false,
     isError: false
