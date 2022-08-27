@@ -23,13 +23,8 @@ let fail=()=>{
 let allDatas=(dispatch)=>{
     dispatch(req())
     axios.get("http://localhost:8080/shopAll")
-    .then((res)=>{
-        
-       dispatch(suc(res.data)) 
-    })
-    .catch((err)=>{
-        dispatch(fail())
-    })
+    .then((res)=>{dispatch(suc(res.data))})
+    .catch((err)=>{dispatch(fail())})
     
 }
 
