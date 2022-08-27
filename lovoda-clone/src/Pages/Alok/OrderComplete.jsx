@@ -30,7 +30,7 @@ let navigate=useNavigate()
 
 
   return (
-    <div style={{marginLeft:"33%",height:"500px",width:"500px"}}>
+    <div style={{marginLeft:"33%",height:"500px",width:"500px",marginBottom:"500px"}}>
        <img src={data} alt="payment" style={{height:"100%",width:"100%"}}/>
      <h1>{thank}.</h1>
     <h1 >{msg}</h1>

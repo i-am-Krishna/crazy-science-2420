@@ -19,8 +19,6 @@ const CartPage = () => {
     axios.get("http://localhost:7000/Cart")
     .then((r) => {
       setCartData(r.data)
-      
-      console.log(r.data);
       let tot = 0;
       for(let i=0; i<r.data.length; i++){
         tot += r.data[i].price
