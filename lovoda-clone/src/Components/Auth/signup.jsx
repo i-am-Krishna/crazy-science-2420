@@ -1,6 +1,82 @@
-import styles from "../styles/signup.module.css"
+import { useDispatch } from 'react-redux'
+import styles from '../../styles/signup.module.css'
+import * as types from '../../Redux/Auth/actionTypes'
+import { register } from '../../Redux/Auth/action'
+import { useNavigate } from 'react-router-dom'
+import { useReducer } from 'react'
+
+function reducer(state,action){
+  switch(action.type){
+
+      case 'name': return {
+          ...state,
+          name:action.payload
+      }
+      
+      case 'email': return {
+          ...state,
+          email:action.payload
+      }
+      
+      case 'password': return {
+          ...state,
+          password:action.payload
+      }
+
+      
+      case 'username': return {
+          ...state,
+          username:action.payload
+      }
+      
+      case 'mobile': return {
+          ...state,
+          mobile:action.payload
+      }
+      
+      case 'description': return {
+          ...state,
+          description:action.payload
+      }
+
+      default : return state;
+  }
+}
+
+const initState = {
+  name: '',
+  email: '',
+  password: '',
+  username: '',
+  mobile: '',
+  description: ''
+} 
+
+
+
+
+
+
+
 
 const Signup = () => {
+
+  const [state,rDispatch] = useReducer(reducer,initState);
+    const disPatch = useDispatch()
+    const navigate = useNavigate()
+    const signUpHandle=(e)=>{
+      e.preventDefault();
+        disPatch(register(state)).then((r)=> {
+          if(r === types.REGISTER_SUCCESS){
+            navigate('/login',{replace: true});
+          }
+        })
+    }
+
+
+
+
+
     return(
     <div>
       <div id={styles.main}>
@@ -39,14 +115,37 @@ const Signup = () => {
           </div>
         </div>
       </div>
-      <form action="">
-        <input type="text" id={styles.fname} placeholder="First name" />
-        <input type="text" id={styles.lname} placeholder="Last name" />
-        <input type="text" id={styles.email} placeholder="Email" />
-        <input type="password" id={styles.password} placeholder="Password" />
+      <form onSubmit={signUpHandle}>
+
+{/* ============================ */}
+
+        <input required id={styles.fname} placeholder="Name"  type="text" value={state.name} onChange={(e)=> rDispatch({type:'name', payload:e.target.value})}/>
+
+        <input required type="text" id={styles.lname} placeholder="Username" value={state.username} onChange={(e)=>rDispatch({type:'username',payload:e.target.value})}  />
+
+        <input required type="email" id={styles.email} placeholder="Email"  value={state.email} onChange={(e)=>rDispatch({type:'email',payload:e.target.value})}/>
+
+        <input required type="password" id={styles.password} placeholder="Password" value={state.password} onChange={(e)=>rDispatch({type:'password',payload:e.target.value})}  />
+        <input type="number"  value={state.mobile} onChange={(e)=>rDispatch({type:'mobile',payload:e.target.value})} />
+        <textarea value={state.description} onChange={(e)=>rDispatch({type:'description',payload:e.target.value})}/>
+                      
+
+
+
+{/* ============================= */}
+
+
+
+
+
         <div id={styles.newsletter}>
+
+
+
+
             <p>Subscribe for Newsletter</p>
             <input type="checkbox" id={styles.checkbox} />
+
         </div>
         <input type="submit" value="Create" />
       </form>

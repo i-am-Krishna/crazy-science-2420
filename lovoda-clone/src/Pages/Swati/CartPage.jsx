@@ -58,7 +58,7 @@ const CartPage = () => {
         <div>Taxes and shipping calculated at checkout</div>
         <div>
           <br />
-          <Link to="/cart/payment"><button>check out</button></Link>
+          <Link to="/cart/information"><button>check out</button></Link>
         </div>
         <br />
         <div className={styles.btn2}>

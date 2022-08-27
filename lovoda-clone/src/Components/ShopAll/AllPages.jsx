@@ -1,13 +1,13 @@
 import React from 'react'
 import { useEffect } from 'react'
-import { allDatas } from '../Redux/Allpage/action'
+import { allDatas } from '../../Redux/Allpage/action'
 import {useDispatch} from 'react-redux'
 import { useSelector } from 'react-redux'
 import { BsHeart } from 'react-icons/bs'
 
 
 import './allPage.css'
-import FilterSort from './Filter&Sort'
+import FilterSort from '../Filter/Filter&Sort'
 import { useLocation, useSearchParams } from 'react-router-dom'
 
 const AllPages = () => {

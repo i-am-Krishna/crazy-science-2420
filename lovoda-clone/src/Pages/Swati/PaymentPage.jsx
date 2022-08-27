@@ -1,4 +1,4 @@
-import styles from "./Payment.module.css";
+import styles from "./details.module.css";
 import { GoChevronRight } from "react-icons/go";
 import React from "react";
 import { BiCheckbox } from "react-icons/bi";
@@ -240,7 +240,9 @@ const PaymentPage = () => {
                  Return to Cart 
                   </Link>
                   </p>
+                  <Link to={'/cart/information/shipping/payment'}>
                   <button>Continue to Shipping</button>
+                  </Link>
                 </div>
                 <br />
               </div>

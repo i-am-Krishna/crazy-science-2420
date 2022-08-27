@@ -1,5 +1,5 @@
 import React from 'react'
-import './allPage.css'
+import '../ShopAll/allPage.css'
 import { BsSearch } from 'react-icons/bs'
 import {BiUser} from 'react-icons/bi'
 import {CgShoppingBag} from 'react-icons/cg'
@@ -37,7 +37,9 @@ const Navbar = () => {
             <BsSearch className='bssearch'/>
           </div>
           <div style={{marginLeft:"28px"}}>
+            <Link to={'/login'}>
             <BiUser className='bssearch'/>
+            </Link>
           </div>
           <div style={{marginLeft:"28px"}}>
             <Link to={'/cart'}>
