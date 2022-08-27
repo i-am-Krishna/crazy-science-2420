@@ -18,10 +18,10 @@ const Navbar = () => {
           <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/files/04122019_logo2_90x.png?v=1645644264" alt="Logo" style={{height:"70%"}} />
           </Link>
           <NavLink to='/' style={({isActive})=>{return {textDecoration : isActive ? "underline":"none"}}}>
-          <p style={{marginLeft:"60px"}}>Home</p>
+          <p className='.p' style={{marginLeft:"60px"}}>Home</p>
           </NavLink>
           <NavLink to='/new_products'  style={({isActive})=>{return {textDecoration : isActive ? "underline":"none"}}}>
-          <p style={{marginLeft:"20px" ,textDecoration:"none"}}>New</p>
+          <p className='.p' style={{marginLeft:"20px" ,textDecoration:"none"}}>New</p>
           </NavLink>
           <NavLink to='/all_products'  style={({isActive})=>{return {textDecoration : isActive ? "underline":"none"}}}>
           <p style={{marginLeft:"20px"}}> Shop All</p>

@@ -3,7 +3,6 @@ import {getData,setData} from '../../Utils/localStorage';
 
 const initState = {
     isAuth: getData('token') ? true : false,
-    // isAuth:true,
     token: getData('token') || '',
     isLoading: false,
     isError: false

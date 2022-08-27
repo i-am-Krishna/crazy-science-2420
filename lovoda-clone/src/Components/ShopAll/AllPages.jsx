@@ -8,7 +8,7 @@ import { BsHeart } from 'react-icons/bs'
 
 import './allPage.css'
 import FilterSort from '../Filter/Filter&Sort'
-import { useLocation, useSearchParams } from 'react-router-dom'
+import { Link, useLocation, useSearchParams } from 'react-router-dom'
 
 const AllPages = () => {
     const dispatch=useDispatch()
@@ -46,6 +46,7 @@ const AllPages = () => {
     <div className='new_product11'>  {mydata.map((elem)=>   (   
       
       <div className='single_new_product11' key={elem.id}>
+        <Link to={`/all_products/${elem.id}`}>
         <div className='card'>
         <img src={elem.imageUrl_1} alt={elem.name} />
         <img src={elem.imageUrl_2} alt={elem.name} className="img-top"/>
@@ -53,6 +54,7 @@ const AllPages = () => {
         <div className='div_icon'><BsHeart className='heart_icon'/></div>
         <p className='single_product_title'>{elem.name}</p>
         <p className='single_product_price'>${elem.price}.00</p>
+        </Link>
         </div>
        
        ))}

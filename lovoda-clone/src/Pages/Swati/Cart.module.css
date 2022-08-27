@@ -10,9 +10,7 @@
     justify-content: space-between;
     height: 100px;
     width: 19%;
-    
 }
-
 .quantity p{
     border: 0px solid gold;
     margin-left: -300px;
@@ -23,7 +21,6 @@
 .textContainerTwo{
     display: flex;
     justify-content: space-around;
-
 }
 .hRow{
     width:95%;
