@@ -1,0 +1,202 @@
+.PaymentInfo {
+  display: flex;
+  justify-content: space-around;
+  height: 652px;
+}
+.PaymentInfofirst {
+  width: 50%;
+  margin-left: 15%;
+}
+.PaymentInfofirst p {
+  width: 20%;
+  text-align: center;
+}
+.firstLhead p {
+  font-size: 23px;
+}
+.InfoSecondHead {
+  display: flex;
+}
+.InfoSecondHead p {
+  width: 10%;
+}
+.ContactInfocontainer {
+  height: 120px;
+  width: 90%;
+}
+
+.firstInfoContainer {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.InfoShip p {
+  width: 120%;
+}
+
+.ShippingMethod {
+  width: 75%;
+}
+.ShppingMP p {
+  font-size: 17px;
+  width: 28%;
+}
+/* .RadioForm2{
+    border: 3px solid rgb(25, 24, 24);
+    height:220px;
+    justify-content: space-between;
+    width: 90%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+}
+.Radioshipping{
+    border: 2px solid red;
+}
+
+.radiFlex{
+    display: flex;
+}
+.EcoLable{
+    border:2px solid rgb(21, 0, 255);
+    margin-top:10%;
+}
+.EcoLable p{
+    border:2px solid red
+}
+     
+
+.EcoLable p{
+    width:280%;
+    margin-top: 30%;
+    margin-left: -28%;
+}
+.FirstLb{
+    padding-right: 55%;
+    margin-top: 1.6%;
+}
+
+.SubTot {
+    width: 15%;
+    height: 35px;
+    margin-left: 80%;
+
+}
+.SubTot p{
+width:80%;
+margin-top:-2%;
+margin-left: 23%;
+} */
+.ContinuePayButt {
+  display: flex;
+}
+.ReturnTocartf {
+  width: 50%;
+}
+.ReturnTocartf p {
+  width: 50%;
+  margin-top: -7%;
+}
+.ContinueBtnPay {
+  width: 40%;
+}
+
+.ContinueBtnPay button {
+  width: 65%;
+  height: 58px;
+  color: white;
+  font-size: 15px;
+  background-color: black;
+  margin-left: 35%;
+  border-radius: 5%;
+}
+
+.radioInfoForm {
+  border: 0px solid red;
+  width: 90%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.RadioFormInfo {
+  border: 0px solid red;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.RadioFormInfo p {
+  margin-left: -10%;
+}
+.HeadRadio {
+  margin-top: -4%;
+}
+.HeadRadio p {
+  margin-left: 2%;
+}
+.OneRadio p {
+  margin-left: -500%;
+}
+
+.TwoRadio p {
+  margin-left: -320%;
+  width: 250%;
+}
+.ThreeRadio p {
+  margin-left: -420%;
+  width: 250%;
+}
+/*second*/
+
+.PaymentInfoSecond {
+  width: 40%;
+  background-color: rgb(239, 239, 243);
+}
+.SecondContainerT {
+  border: 0px solid red;
+  display: flex;
+  margin-top: 10%;
+}
+.ImageContainer {
+  display: flex;
+  height: 200px;
+  width: 70%;
+}
+.ImageContainer img {
+  height: 140px;
+  width: 70%;
+  margin-left: 15%;
+}
+.ImageContainer p {
+  margin-top: 50%;
+  width: 150%;
+  font-size: 15px;
+  margin-left: -30%;
+}
+.PriceContain p {
+  margin-top: 140%;
+  font-size: 17px;
+}
+.ContainerTypes {
+  width: 99.5%;
+  font-size: 17px;
+
+  margin-left: 1%;
+  display: flex;
+}
+.ContainerT2 p {
+  margin-left: 850%;
+  /* border: 2px solid red; */
+  width: 10%;
+  font-size: 20px;
+}
+
+.ContainerT3 p {
+  margin-left: 695%;
+  /* border: 2px solid red; */
+  font-size: 20px;
+  width: 10%;
+}
+.ContainerLt {
+  width: 72%;
+  margin-left: 6%;
+}

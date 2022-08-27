@@ -25,18 +25,21 @@ const [count, setCount] = useState(1);
 console.log(totalP);
 
   return (
-    <div className={styles.ProductContainer}>
+    <>
     <div className={styles.counterContainer}>
           <div className={styles.Productimg}>
             <p>Product</p>
           </div>
           <div>
-            <p>QUANTITY</p>
+          <p>QUANTITY</p>
           </div>
           <div>
             <p>TOTAL</p>
           </div>
         </div>
+        
+    <div className={styles.ProductContainer}>
+    
         <div className={styles.TotalContainer}>
           <div className={styles.imageContainer}>
             <img src={data.product_img} />
@@ -64,7 +67,7 @@ console.log(totalP);
           <div>{`$ ${count * data.price}`}</div>
         </div>
 </div>
-
+</>
   )
 }
 
