@@ -1,0 +1,589 @@
+.PaymentHead {
+  border: 0px solid black;
+  height: 718px;
+  display: flex;
+  justify-content: space-between;
+}
+.firstHead {
+  border: 0px solid black;
+  width: 62%;
+  margin-top: 4%;
+}
+.firstHead h1 {
+  border: 0px solid red;
+  width: 58%;
+}
+.firstHead p {
+  border: 0px solid red;
+  width: 65%;
+  height: 20px;
+}
+.secondHead {
+  border: 0px solid black;
+  width: 43%;
+  background-color: rgb(244, 244, 250);
+  margin: none;
+  height:130%;
+
+}
+.secondHeadTwo{
+  margin-top: 8%;
+  border: 0px solid red;
+}
+.PaymentSecondHead {
+  border: 0px solid blue;
+  height: 50px;
+  width: 50%;
+  margin-left: 18%;
+  display: flex;
+}
+.form {
+  border: 0px solid black;
+  height: 480px;
+  width: 90%;
+  margin: auto;
+}
+
+.formFirst {
+  display: flex;
+  border: 0px solid red;
+  justify-content: space-between;
+  width: 81%;
+  margin-left: 14%;
+}
+
+.Checkbox p {
+  font-size: 10px;
+}
+.shipping p {
+  border: 0px solid red;
+}
+
+/*first*/
+.Information {
+  border: 0px solid black;
+  height: 500px;
+}
+.ContactInfo {
+  border: 0px solid red;
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.ContactInfoTwo {
+  border: 0px solid blue;
+  width: 55%;
+  margin-left: 14%;
+  font-size: 15px;
+}
+.ContactInfoThree {
+  border: 0px solid rgb(23, 148, 90);
+  width: 70%;
+  margin-left: 5%;
+  font-size: 15px;
+}
+
+.ContactInfoThree p {
+  margin-left: 20px;
+  width: 80%;
+}
+.ContactInput {
+  border: 0px solid red;
+  height: 300px;
+}
+.ContactChecks {
+  display: flex;
+  border: 0px solid red;
+  width: 35%;
+  margin-left: 20%;
+}
+.ShippingF p {
+  margin-left: -3%;
+  font-size: 17px;
+}
+.ReturnCart {
+  display: flex;
+}
+.ReturnCart p {
+  margin-left: -223px;
+}
+.ReturnCart button {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 21%;
+  margin-left: 5.2%;
+  font-size: 13px;
+  border-radius: 8px;
+}
+.LastFoot {
+  display: flex;
+  border: 0px solid red;
+  width: 64%;
+  margin: auto;
+}
+.ImageContainer {
+  display: flex;
+  border: 0px solid red;
+}
+.btn2 img {
+  height: 38px;
+  background-color: blue;
+
+}
+.btn2 button {
+  background-color: rgb(60, 60, 160);
+  height: 43px;
+  width: 160%;
+  border-radius: 5%;
+  border: none;
+
+}
+
+.btn3 button {
+  background-color: rgb(254, 207, 52);
+  height: 43px;
+  width: 160%;
+  border: none;
+  border-radius: 5%;
+}
+
+.btn3 img {
+  height: 38px;
+}
+.btn5 button {
+  background-color: rgb(20, 20, 20);
+  width: 195%;
+  height: 43px;
+  border: none;
+
+  border-radius: 5%;
+}
+.btn5 img {
+  height: 38px;
+}
+
+.btn {
+  border: 0px solid red;
+  width: 58%;
+  margin: auto;
+  display: flex;
+  margin-top: 2%;
+  gap: 80px;
+}
+.SelectContainer{
+  border:0px solid rgb(44, 41, 41);
+  width:106%
+}
+.SelectContainer select{
+  border:1px solid rgb(22, 21, 21);
+  width: 61.8%;
+  height: 33px;
+  margin-left: 1%;
+  
+}
+
+.SelectType {
+  border:1px solid rgb(88, 86, 86);
+  width: 20.8%;
+  height: 33px;
+  margin-left: 1%;
+}
+
+/* second */
+
+
+.PaymentInfoSecond{
+  width:40%;
+  background-color: rgb(239, 239, 243);
+
+}
+.SecondContainerT{
+  border:0px solid red;
+  display: flex;
+  margin-top: 10%;
+
+}
+.ImageContainer{
+   display: flex;
+   height: 200px;
+   width: 70%;
+}
+.ImageContainer img{
+  height: 140px;
+  width: 70%;
+  margin-left: 15%;
+}
+.ImageContainer p{
+   margin-top: 50%;
+   width: 150%;
+   font-size: 15px;
+   margin-left: -30%;
+}
+.PriceContain p{
+  margin-top: 140%;
+  font-size: 17px;
+
+}
+.ContainerTypes{
+  width: 99.5%;
+  font-size: 17px;
+
+  margin-left: 1%;
+  display: flex;
+
+}
+.ContainerT2 p{
+margin-left:850% ;
+width: 10%;
+font-size: 20px;
+
+}
+
+.ContainerT3 p{
+  margin-left:695% ;
+  font-size: 20px;
+  width: 10%;
+ }
+.ContainerLt{
+  width:72%;
+  margin-left: 6%;
+}
+
+.PaymentInfo{
+ display: flex;
+ justify-content: space-around;
+ height: 652px;
+}
+.PaymentInfofirst{
+        width:50%;
+        margin-left: 15%;
+}
+.PaymentInfofirst p{
+        width:20%;
+        text-align: center;
+        
+}
+.Selectedstas{
+width: 35.9%;
+height: 30px;
+
+}
+.Selectedstasf{
+  width: 100%;
+height: 38px;
+}
+
+.FirstInp{
+  height: 40px;
+}
+.FirstInp input {
+  height: 30px;
+  width: 32%;
+
+}
+.firstLhead p{
+font-size: 23px;
+}
+.InfoSecondHead{
+    display: flex;
+}
+.InfoSecondHead p{
+    width: 10%;
+}
+.ContactInfocontainer{
+    height: 120px;
+    width: 90%;
+}
+
+.firstInfoContainer{
+    border:none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+}
+
+.InfoShip p {
+    width: 120%;
+}
+
+.ShippingMethod{
+    width:75%;
+}
+.ShppingMP p{
+    font-size: 17px;
+    width: 28%;
+}
+/* .RadioForm2{
+    border: 3px solid rgb(25, 24, 24);
+    height:220px;
+    justify-content: space-between;
+    width: 90%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+}
+.Radioshipping{
+    border: 2px solid red;
+}
+
+.radiFlex{
+    display: flex;
+}
+.EcoLable{
+    border:2px solid rgb(21, 0, 255);
+    margin-top:10%;
+}
+.EcoLable p{
+    border:2px solid red
+}
+     
+
+.EcoLable p{
+    width:280%;
+    margin-top: 30%;
+    margin-left: -28%;
+}
+.FirstLb{
+    padding-right: 55%;
+    margin-top: 1.6%;
+}
+
+.SubTot {
+    width: 15%;
+    height: 35px;
+    margin-left: 80%;
+
+}
+.SubTot p{
+width:80%;
+margin-top:-2%;
+margin-left: 23%;
+} */
+.ContinuePayButt{
+    display: flex;
+    
+}
+.ReturnTocartf{
+    width: 50%;
+margin-top: 10%;
+}
+.ReturnTocartf p{
+    width: 50%;
+margin-top: -7%;
+}
+.ContinueBtnPay{
+    width: 40%;
+border:0px solid red;
+margin-top: 10%;
+}
+
+
+.ContinueBtnPay button{
+    width: 65%;
+    height: 58px;
+    color: white;
+    font-size: 15px;
+    background-color: black;
+     margin-left: 35%;
+     border-radius: 5%;
+}
+
+.radioInfoForm{
+    border:0px solid red;
+      width:90%;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.RadioFormInfo{
+    border:0px solid red;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+
+}
+.RadioFormInfo p{
+    margin-left: -10%;
+
+}
+.HeadRadio{
+    margin-top: -4%;
+}
+.HeadRadio p{
+    margin-left: 2%;
+}
+.OneRadio p{
+    margin-left: -500%;
+}
+
+.TwoRadio p{
+    margin-left: -320%;
+    width: 250%;
+}
+.ThreeRadio p{
+    margin-left: -420%;
+    width: 250%
+}
+/*second*/
+
+
+.PaymentInfoSecond{
+    width:40%;
+    background-color: rgb(239, 239, 243);
+height: 800px;
+}
+.SecondContainerT{
+    border:0px solid red;
+    display: flex;
+    margin-top: 10%;
+
+}
+.ImageContainer{
+     display: flex;
+     height: 200px;
+     width: 70%;
+}
+.ImageContainer img{
+    height: 140px;
+    width: 70%;
+    margin-left: 15%;
+}
+.ImageContainer p{
+     margin-top: 50%;
+     width: 150%;
+     font-size: 15px;
+     margin-left: -30%;
+}
+.PriceContain p{
+    margin-top: 140%;
+    font-size: 17px;
+
+}
+.ContainerTypes{
+    width: 99.5%;
+    font-size: 17px;
+
+    margin-left: 1%;
+    display: flex;
+
+}
+.ContainerT2 p{
+ margin-left:850% ;
+ /* border: 2px solid red; */
+ width: 10%;
+ font-size: 20px;
+
+}
+
+.ContainerT3 p{
+    margin-left:695% ;
+    /* border: 2px solid red; */
+    font-size: 20px;
+    width: 10%;
+   }
+.ContainerLt{
+    width:72%;
+    margin-left: 6%;
+}
+
+
+/*first */
+.ContInfocontainer {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.FirstButton{
+  border:0px solid red;
+
+}
+.btnss1 img{
+  height: 50px;
+  width: 150%;
+  border-radius: 10px;
+
+}
+
+.btnss2 img{
+  height: 50px;
+  width: 142%;
+  margin-left: 32%;
+  border-radius: 10px;
+
+}
+.btnss3 img{
+  height: 50px;
+  width: 230%;
+  margin-left: 80%;
+  border-radius: 10px;
+
+}
+.ShippingAddrContain{
+  height: 300px;
+  width: 90%;
+}
+.ciF p{
+ width:120%;
+ font-size: 15px;
+ margin-top: -4%;
+}
+.Maindiv{
+  font-size: 15px;
+
+}
+.inputFis{
+height: 50px;
+}
+
+.inputFis input{
+height: 50px;
+width: 100%;
+}
+.Emaildiv{
+height: 50px;
+}
+.Emaildiv p {
+width: 30%;
+margin-top: -3%;
+margin-left: 3%;
+}
+
+.ContactMainInfo{
+  display: flex;
+  justify-content: space-between;
+}
+.MainInfoContaier{
+   width: 90%;
+
+}
+.ShippingAdddiv{
+  font-size: 10px;
+}
+.ShippingAdddiv p{
+  border: 0px solid red; 
+   font-size: 18px;
+   width: 30%;
+}
+.ShippingAdddiv input {
+  width: 100%;
+  height: 40px;
+}
+
+.InputNames input{
+  height: 40px;
+  width: 50%;
+}
+.InputOne input{
+  width: 100%;
+  height: 40px;
+}
+.FirstButton img{
+  height: 50px;
+  border:2px solid red;
+  width: 90%;
+
+}
