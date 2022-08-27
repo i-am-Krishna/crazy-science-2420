@@ -3,6 +3,8 @@
   height: 718px;
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  padding: 0;
 }
 .firstHead {
   border: 0px solid black;
@@ -31,11 +33,12 @@
   border: 0px solid red;
 }
 .PaymentSecondHead {
-  border: 0px solid blue;
-  height: 50px;
-  width: 50%;
-  margin-left: 18%;
   display: flex;
+  justify-content: left;
+  align-items:center;
+  height: 50px;
+  width: 58%;
+  margin: auto;
 }
 .form {
   border: 0px solid black;
@@ -96,7 +99,7 @@
 .ContactChecks {
   display: flex;
   border: 0px solid red;
-  width: 35%;
+  width: 50%;
   margin-left: 20%;
 }
 .ShippingF p {
