@@ -1,0 +1,258 @@
+.PaymentInfo{
+    display: flex;
+    justify-content: space-around;
+    height: 652px;
+   }
+   .PaymentInfofirst{
+           width:50%;
+           margin-left: 15%;
+   }
+   .PaymentInfofirst p{
+           width:20%;
+           text-align: center;
+           
+   }
+.ChangesInfo1 p{
+margin-left: -15%;
+color: blue;
+}
+
+   .VisaF img{
+    height:50px;
+    margin-left:-40%;
+    margin-top: -6%;
+   }
+   .VisaF2 img{
+    height:65px;
+    margin-left:-150%;
+    margin-top: -150%;
+
+   }
+   .visaF3 img{
+    height:65px;
+    margin-left:-150%;
+   }
+   .visaF4 img{
+    height:10px
+   }
+   .firstLhead p{
+   font-size: 23px;
+   }
+   .InfoSecondHead{
+       display: flex;
+   }
+   .InfoSecondHead p{
+       width: 10%;
+   }
+   .ContactInfocontainer{
+       height: 120px;
+       width: 90%;
+   }
+   
+   .firstInfoContainer{
+       border:none;
+       display: flex;
+       justify-content: space-between;
+       font-size: 15px;
+       box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+   
+   }
+   .GpayF{
+    height: 42px;
+    width: 70%;
+    font-size: 18px;
+   }
+   .GpayF2 p{
+    height: 40px;
+    width: 38%;
+   }
+.CrediCard{
+    width: 90%;
+    height: 300px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+}
+   .MainCredit{
+display: flex;
+width: 100%;
+justify-content: space-between;
+height: 40px;
+border: 0px solid red;
+   }
+   .crediF p{
+    width: 150%;
+margin-top: -3%;
+margin-left: -350%;
+font-size: 14px;
+   }
+.Maincmpo{
+border: 2px solid red;
+width: 10%;
+}
+   .InputCredFirst{
+    box-shadow: 0px 0px 10px rgba(30, 27, 27, 0.1);
+   }
+   .InputCredit input{
+    width: 100%;
+    height: 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+
+   }
+
+   .InputCredit2 input{
+    width: 100%;
+    height: 30px;
+
+   }
+
+   .InputCredit3 input{
+    width: 50%;
+    height: 30px;
+   }
+   .RadioForm12{
+    height:100px;
+    justify-content: space-between;
+    width: 90%;
+    box-shadow: 0px 0px 10px rgba(11, 10, 10, 0.1);
+
+}
+   .Radioshippingpay{
+  width: 111%;
+  height: 40px;
+  box-shadow: 0px 0px 10px rgba(11, 10, 10, 0.1);
+
+   }
+   .BillngeAddP2{
+    width: 82%;
+   }
+   .BillngeAddP2 p{
+    font-size: 14px;
+   }
+   .InfoShip p {
+       width: 120%;
+   }
+   
+   .ShippingMethod{
+       width:75%;
+   }
+   .ShppingMP p{
+       font-size: 18px;
+       width: 28%;
+   }
+
+   
+   
+   .Rememberme{
+    width: 90%;
+}
+.Rememberme p{
+
+    font-size: 18.5px;
+    width: 24%;
+
+}
+        
+   .SaveInfor{
+    width: 90%;
+    height: 50px;
+   }
+   .SaveInfor p{
+    width: 48%;
+    font-size: 12.5px;
+    margin-top: -1.9%;
+   }
+
+
+   .ContinuePayButt{
+       display: flex;
+       
+   }
+   .ReturnTocartf{
+       width: 50%;
+   
+   }
+   .ReturnTocartf p{
+       width: 50%;
+   margin-top: -7%;
+   }
+   .ContinueBtnPay{
+       width: 40%;
+   
+   }
+   
+   .ContinueBtnPay button{
+       width: 40%;
+       height: 58px;
+       color: white;
+       font-size: 15px;
+       background-color: black;
+        margin-left: 60%;
+        border-radius: 5%;
+   }
+   
+   /*second*/
+   
+   
+   .PaymentInfoSecond{
+       width:40%;
+       background-color: rgb(239, 239, 243);
+         height: 1100px;
+   }
+   .SecondContainerT{
+       display: flex;
+       margin-top: 10%;
+   
+   }
+   .ImageContainer{
+        display: flex;
+        height: 200px;
+        width: 70%;
+   }
+   .ImageContainer img{
+       height: 140px;
+       width: 70%;
+       margin-left: 15%;
+   }
+   .ImageContainer p{
+        margin-top: 50%;
+        width: 150%;
+        font-size: 15px;
+        margin-left: -30%;
+   }
+   .PriceContain p{
+       margin-top: 140%;
+       font-size: 17px;
+   
+   }
+   .ContainerTypes{
+       width: 99.5%;
+       font-size: 17px;
+   
+       margin-left: 1.8%;
+       display: flex;
+   
+   }
+   .ContainerT2 p{
+    margin-left:850% ;
+    width: 10%;
+    font-size: 20px;
+   
+   }
+   
+   .ContainerT3 p{
+       margin-left:700% ;
+       font-size: 20px;
+       width: 10%;
+      }
+   .ContainerLt{
+       width:72%;
+       margin-left: 6%;
+   }
+
+   /* Billing addd*/
+
+   .BillngeAddP2 p{
+    width:100%;
+    margin-top: -2%;
+   }
