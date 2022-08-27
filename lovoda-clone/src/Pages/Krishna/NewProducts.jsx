@@ -2,9 +2,9 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useLocation, useSearchParams } from 'react-router-dom'
-import FilterSort from '../Components/Filter&Sort'
-import SingleNewProduct from '../Components/SingleNewProduct'
-import { getNewPageData } from '../Redux/NewPage/action'
+import FilterSort from '../../Components/Filter/Filter&Sort'
+import SingleNewProduct from '../../Components/SingleProduct/SingleNewProduct'
+import { getNewPageData } from '../../Redux/NewPage/action'
 import './newProduct.css'
 
 const NewProducts = () => {

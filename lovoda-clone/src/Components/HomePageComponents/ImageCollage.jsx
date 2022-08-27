@@ -16,7 +16,7 @@ export const ImageCollage = () => {
             <div className='second_container'>
                 <div className='third_container'>
                     <div className='cont'>
-                        <img className='image' src="https://scontent.cdninstagram.com/v/t51.2885-15/296817431_163686646176589_9025849763226676913_n.jpg?stp=dst-jpg_e35_s320x320&_nc_ht=scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=31vO6RMPmdsAX_t5e3t&edm=AMO9-JQAAAAA&ccb=7-5&oh=00_AT8jA32sE6HciSKr3WBQ81w9HQ3RCSI2LOMNmiHgEHzMhg&oe=6307B077&_nc_sid=b9f2ee" alt="" />
+                        <img className='image' src="https://images.unsplash.com/photo-1661469900195-a78296678db4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
                         <div className='middle'>
                             <div className='text'>SHOP IT</div>
                         </div>
