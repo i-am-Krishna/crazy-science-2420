@@ -8,18 +8,23 @@ import PaymentPage from '../Pages/Swati/PaymentPage'
 import RequiredAuth from '../Components/Authentication/RequiredAuth'
 import PaymentSuccess from '../Pages/Alok/PaymentSuccess'
 import Signin from '../Components/Auth/signin'
-import Signup from '../Components/Auth/signup'
+import ProductDetails from '../Pages/Krishna/ProductDetails'
 
 
 const MainRoutes = () => {
   return (
     <Routes>
         <Route path='/' element={<HomePage/>} />
+        <Route path='/:id' element={<ProductDetails/>} />
+
         <Route path='/new_products' element={<NewProducts/>}/>
+        <Route path='/new_products/:id' element={<ProductDetails/>}/>
+
         <Route path='/all_products' element={<AllPages/>}/>
+        
+        <Route path='/all_products/:id' element={<ProductDetails/>}/>
         <Route path='/cart' element={<CartPage/>}/>
         <Route path='/login' element={<Signin/>}/>
-        <Route path='/signup' element={<Signup/>}/>
         <Route path='/cart/information' element={
             <RequiredAuth>
         <PaymentPage/>
