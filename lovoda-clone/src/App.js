@@ -2,13 +2,16 @@
 import MainRoutes from './Routes/MainRoutes';
 import Navbar from './Components/Header/Navbar'
 import Footer from './Components/footer/footer';
+import OrderComplete from './Pages/Alok/OrderComplete';
+
 
 function App() {
   return (
     <div>
-      <Navbar/> 
+      {/* <Navbar/> 
       <MainRoutes/>
-      <Footer/>
+      <Footer/> */}
+      <OrderComplete/>
     </div>
   );
 }
