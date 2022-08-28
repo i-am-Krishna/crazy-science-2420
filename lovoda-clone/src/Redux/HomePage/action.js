@@ -4,7 +4,7 @@ import axios from "axios";
 export const getHomePageData = (parms) => (dispatch) => {
   dispatch({ type:GET_HOMEPAGE_REQUEST });
    axios
-    .get("http://localhost:8080/HomePageData", parms) 
+    .get("https://lovoda-backend-api.herokuapp.com/api/HomePageData", parms) 
     .then((res) =>
       dispatch({ type: GET_HOMEPAGE_SUCCESS, payload: res.data })
     )
