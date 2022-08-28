@@ -15,7 +15,7 @@ const PaymentPage = () => {
 console.log(datainput)
   return (
     <>
-      <div className={styles.PaymentInfo}>
+      <div style={{marginBottom:"300px"}} className={styles.PaymentInfo}>
         <div className={styles.PaymentInfofirst}>
           <div className={styles.firstLhead}>
             <p>LOVODA</p>
@@ -24,20 +24,20 @@ console.log(datainput)
           <div className={styles.InfoSecondHead}>
             <div>
               <p>Cart</p>
+            <GoChevronRight   />
             </div>
-            <GoChevronRight style={{ marginTop: "15px" }} />
             <div>
               <p>Information</p>
+            <GoChevronRight   />
             </div>
-            <GoChevronRight style={{ marginTop: "15px" }} />
             <div>
               <p>Shopping</p>
+            <GoChevronRight  />
             </div>
-            <GoChevronRight style={{ marginTop: "15px" }} />
             <div>
               <p>Payment</p>
+            <GoChevronRight  />
             </div>
-            <GoChevronRight style={{ marginTop: "15px" }} />
           </div>
           <br />
 
@@ -86,18 +86,18 @@ console.log(datainput)
               />
             </div>
 
-            <div className={styles.Emaildiv}>
-              <input type="checkbox"/>
+            <div  className={styles.Emaildiv}>
+              <input style={{width:"20px"}} type="checkbox"/>
               <p>Email me with news and offers</p>
             </div>
           </div>
 
-          <div className={styles.ShippingAddrContain}>
+          <div  className={styles.ShippingAddrContain}>
             <div className={styles.ShippingAdddiv}>
               <div>
                 <p>Shipping address</p>
               </div>
-              <select
+              <select style={{width:"675px"}}
                 className={styles.Selectedstasf}
                 onChange={(e) => {
                   setTitle(setTitle);
@@ -158,8 +158,8 @@ console.log(datainput)
               {states}
               <input type="text" name="number" placeholder="ZIP code" />
             </div>
-            <div className={styles.InputOne}>
-              <input type="number" placeholder=" phone (907) 488-6419" />
+            <div style={{width:"640px"}} >
+              <input  style={{width:"100%"}}  type="number" placeholder=" phone (907) 488-6419" />
             </div>
             <br />
           </div>
@@ -168,7 +168,7 @@ console.log(datainput)
           <br />
 
           <br />
-          <div className={styles.ContinuePayButt}>
+          <div  className={styles.ContinuePayButt}>
             <div className={styles.ReturnTocartf}>
               <GoChevronLeft
                 style={{
@@ -204,9 +204,11 @@ console.log(datainput)
             </div>
           </div>
 
-          <div>
+          <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
             <input
-              style={{ height: "34px", marginLeft: "33px", width: "55%" }}
+              style={{ height: "35px", 
+              marginLeft: "33px",
+               width: "45%" }}
               type="text"
               name="name"
               placeholder="Gift card or discount code"
@@ -218,9 +220,10 @@ console.log(datainput)
                 border: "none",
                 borderRadius: "5%",
                 marginLeft: "8px",
+                marginBottom:"45px",
                 width: "15%",
                 backgroundColor: "#BABBC5",
-                fontSize: "19px",
+                fontSize: "16px",
                 color: "white ",
               }}
               type="submit"

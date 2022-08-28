@@ -34,7 +34,17 @@ if(id){
 
  
 
-const handleCartClick=({currentProduct})=>{
+
+
+const handleCartClick=()=>{
+  
+  let data = currentProduct 
+  let product_data = JSON.parse(localStorage.getItem("data")) || [] ;
+  product_data.push(data);
+  localStorage.setItem("data",JSON.stringify(product_data))
+
+  // console.log(data)
+  // setData("cartArr",JSON.stringify(currentProduct))
 
 //  dispatch(setCartData(currentProduct)).then((res)=>setData(res.data)).then(()=> navigate('/cart'))
 }

@@ -10,6 +10,8 @@ import PaymentSuccess from '../Pages/Alok/PaymentSuccess'
 import Signin from '../Components/Auth/signin'
 import ProductDetails from '../Pages/Krishna/ProductDetails'
 import OrderComplete from '../Pages/Alok/OrderComplete'
+import ShippingPage from '../Pages/Swati/ShippingPage'
+import PaymentMain from '../Pages/Swati/PaymentMain'
 
 
 const MainRoutes = () => {
@@ -33,12 +35,13 @@ const MainRoutes = () => {
         }/>
         <Route path='/cart/information/shipping' element={
             <RequiredAuth>
-        <PaymentPage/>
+        <ShippingPage/>
             </RequiredAuth>
         }/>
         <Route path='/cart/information/shipping/payment' element={
             <RequiredAuth>
-        <PaymentSuccess/>
+        {/* <PaymentSuccess/> */}
+        <PaymentMain/>
             </RequiredAuth>
         }/>
         <Route path='/cart/information/shipping/payment/order_successful' element={
