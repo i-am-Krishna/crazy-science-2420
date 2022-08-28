@@ -8,36 +8,37 @@ import AddedProduct from "./AddedProduct";
 import axios from "axios"
 import { useEffect } from "react";
 const CartPage = () => {
-  const [cartData, setCartData] = useState([])
+  // const [cartData, setCartData] = useState([])
   const [total, setTotal] = useState(0);
   const [quantity, setQuantity] = useState(1)
+  const cartData = JSON.parse(localStorage.getItem("data")) || []
   // const incCount = () => {
   //   setCount(count + 1);
   // };
 
-  const getCart = () => {
-    axios.get("http://localhost:7000/Cart")
-    .then((r) => {
-      setCartData(r.data)
-      let tot = 0;
-      for(let i=0; i<r.data.length; i++){
-        tot += r.data[i].price
-      }
-      setTotal(tot)
-    })
-  }
+  // const getCart = () => {
+  //   axios.get("http://localhost:8080/Cart")
+  //   .then((r) => {
+  //     setCartData(r.data)
+  //     let tot = 0;
+  //     for(let i=0; i<r.data.length; i++){
+  //       tot += r.data[i].price
+  //     }
+  //     setTotal(tot)
+  //   })
+  // }
 
-  const handleDelete = (id) => {
-    console.log(id);
-    axios.delete(`http://localhost:7000/Cart/${id}`)
-    .then(() => {
-      getCart();
-    })
-  }
+  // const handleDelete = (id) => {
+  //   console.log(id);
+  //   axios.delete(`http://localhost:8080/Cart/${id}`)
+  //   .then(() => {
+  //     getCart();
+  //   })
+  // }
 
-  useEffect(() => {
-    getCart();
-  },[])
+  // useEffect(() => {
+  //   getCart();
+  // },[])
 
   // const decCount = () => {
   //   setCount(count - 1);
@@ -53,7 +54,7 @@ const CartPage = () => {
         {/* <AddedProduct/> */}
         {
           cartData.length > 0 && cartData.map((item) => {
-            return <AddedProduct setTotal={setTotal} total={total} data={item} setQuantity={setQuantity} deleteCartData={handleDelete} key={item.id}/>
+            return <AddedProduct setTotal={setTotal} total={total} data={item} setQuantity={setQuantity}   key={item.id}/>
           })
         }
         {/* <div className={styles.counterContainer}>

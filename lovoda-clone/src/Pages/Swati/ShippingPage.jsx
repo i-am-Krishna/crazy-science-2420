@@ -17,24 +17,41 @@ const ShippingPage = () => {
             <p>LOVODA</p>
           </div>
 
+          
+          
+          
+          
+          
+          
+          {/* start */}
+          
           <div className={styles.InfoSecondHead}>
             <div>
               <p>Cart</p>
+            <GoChevronRight   />
             </div>
-            <GoChevronRight style={{ marginTop: "15px" }} />
             <div>
               <p>Information</p>
+            <GoChevronRight   />
             </div>
-            <GoChevronRight style={{ marginTop: "15px" }} />
             <div>
-              <p>Shipping</p>
+              <p>Shopping</p>
+            <GoChevronRight  />
             </div>
-            <GoChevronRight style={{ marginTop: "15px" }} />
             <div>
               <p>Payment</p>
+            <GoChevronRight  />
             </div>
-            <GoChevronRight style={{ marginTop: "15px" }} />
           </div>
+ 
+          
+          {/* end */}
+          
+          
+          
+          
+          
+           
           <br />
           <div className={styles.ContactInfocontainer}>
             <div className={styles.firstInfoContainer}>
@@ -62,26 +79,102 @@ const ShippingPage = () => {
             </div>
           </div>
 
-           <div className={styles.radioInfoForm}>
-            <div className={styles.RadioFormInfo}>
-             <input type="radio"/>
-             <div className={styles.OneRadio}>
-             <p>Economy</p>
-             </div>
-             <div>
-             <p>$55</p>
 
-             </div>
-            </div>
-            <div className={styles.HeadRadio}>
-             <p>5 to 8 business days</p>
-            </div>
+
+
+
+
+
+
+
+
+           <div className={styles.radioInfoForm}>
+
+ 
+
+            <div style={{height:"50px" ,display:"flex",flexDirection:"column" }}>
+              <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",width:"90%"}}>
+<div style={{display:"flex",justifyContent:"center",alignItems:"center"}} >
+<input style={{width:"20px"}} type="radio"/>
+<span style={{fontSize:"14px"}}>Economy</span>
+
+</div>
+<div style={{marginRight:"-50px"}}>
+$55
+</div>
+    </div>
+<div style={{margin:"-15px 0 0 15px"}}>
+5 to 8 business days
+</div>
+ </div>
             <hr></hr>
 
 
-            <div className={styles.RadioFormInfo}>
-             <input type="radio"/>
+       
+
+
+
+<div style={{height:"50px" ,display:"flex",flexDirection:"column" }}>
+              <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",width:"90%"}}>
+<div style={{display:"flex",justifyContent:"center",alignItems:"center"}} >
+<input style={{width:"20px"}} type="radio"/>
+<span style={{fontSize:"14px"}}>USPS prority mail</span>
+
+</div>
+<div style={{marginRight:"-50px"}}>
+$55
+</div>
+    </div>
+<div style={{margin:"-15px 0 0 15px"}}>
+3 business days
+</div>
+ </div>
+
+ <hr />
+
+
+ 
+ <div style={{height:"50px" ,display:"flex",flexDirection:"column" }}>
+              <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",width:"90%"}}>
+<div style={{display:"flex",justifyContent:"center",alignItems:"center"}} >
+<input style={{width:"20px"}} type="radio"/>
+<span style={{fontSize:"14px"}}>UPS* Ground</span>
+
+</div>
+<div style={{marginRight:"-50px"}}>
+$55
+</div>
+    </div>
+<div style={{margin:"-15px 0 5px 15px"}}>
+4 business days
+</div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+            {/* <div className={styles.RadioFormInfo}>
              <div className={styles.TwoRadio}>
+             <input type="radio"/>
              <p>USPS Prority Mail</p>
              </div>
              <div>
@@ -107,7 +200,23 @@ const ShippingPage = () => {
             <div className={styles.HeadRadio}>
              <p>4 business days</p>
             </div>
-           </div>
+ */}
+
+
+      </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
           <br/>
           <div className={styles.ContinuePayButt}>
             <div className={styles.ReturnTocartf}>
@@ -141,29 +250,32 @@ const ShippingPage = () => {
             </div>
           </div>
 
-          <div>
-              <input
-                style={{ height: "34px", marginLeft: "33px", width: "55%" }}
-                type="text"
-                name="name"
-                placeholder="Gift card or discount code"
-              />
-              
-              <input
-                style={{
-                  height: "35px",
-                  border: "none",
-                  borderRadius: "5%",
-                  marginLeft: "8px",
-                  width: "15%",
-                  backgroundColor: "#BABBC5",
-                  fontSize: "19px",
-                  color: "white ",
-                }}
-                type="submit"
-                value="Apply"
-              />
-            </div>
+          <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+            <input
+              style={{ height: "35px", 
+              marginLeft: "33px",
+               width: "45%" }}
+              type="text"
+              name="name"
+              placeholder="Gift card or discount code"
+            />
+
+            <input
+              style={{
+                height: "35px",
+                border: "none",
+                borderRadius: "5%",
+                marginLeft: "8px",
+                marginBottom:"45px",
+                width: "15%",
+                backgroundColor: "#BABBC5",
+                fontSize: "16px",
+                color: "white ",
+              }}
+              type="submit"
+              value="Apply"
+            />
+          </div>
             <br></br>
             <div className={styles.ContainerLt}>
             <hr></hr>
