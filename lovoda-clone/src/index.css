@@ -3,8 +3,12 @@
    /* margin: 0;
   padding: 0;  */
    color: black;
+  
    /* box-sizing: border-box; */
    font-family: 'Assistant', sans-serif;
+}
+button{
+  cursor: pointer;
 }
 body {
   margin: 0;

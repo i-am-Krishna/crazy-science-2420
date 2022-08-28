@@ -7,6 +7,7 @@ import { GoChevronLeft } from "react-icons/go";
 import { IoIosArrowDown } from "react-icons/io";
 import { GoQuestion } from "react-icons/go";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const PaymentPage = () => {
   const [states, setStates] = useState("");
   const [title, setTitle] = useState("");
@@ -23,19 +24,27 @@ console.log(datainput)
 
           <div className={styles.InfoSecondHead}>
             <div>
+              <Link to={'/cart'}>
               <p>Cart</p>
+              </Link>
             <GoChevronRight   />
             </div>
             <div>
+              <Link to={'/cart/information'}>
               <p>Information</p>
+              </Link>
             <GoChevronRight   />
             </div>
             <div>
-              <p>Shopping</p>
+              <Link to={'/cart/information/shipping'}>
+              <p>Shipping</p>
+              </Link>
             <GoChevronRight  />
             </div>
             <div>
+            <Link to={'/cart/information/shipping/payment'}>
               <p>Payment</p>
+            </Link>
             <GoChevronRight  />
             </div>
           </div>
@@ -78,7 +87,7 @@ console.log(datainput)
             </div>
             <div className={styles.inputFis}>
               <input onChange={(e)=> {setDatainput(e.target.value)
-               localStorage.setItem("emaildata", datainput)
+               localStorage.setItem("emaildata",e.target.value)
       }}
                 type="text"
                 email="email"
@@ -126,7 +135,7 @@ console.log(datainput)
 
             <div className={styles.InputOne}>
               <input type="text" placeholder="Address" onChange={(e)=>{ setAddress(e.target.value)
-               localStorage.setItem("addressdata",addreinput)
+               localStorage.setItem("addressdata",e.target.value)
               }} />
             </div>
             <br />
@@ -177,10 +186,15 @@ console.log(datainput)
                   marginTop: "6%",
                 }}
               />
+              <Link to={'/cart'}>
+
               <p>Return to Information</p>
+              </Link>
             </div>
             <div className={styles.ContinueBtnPay}>
+              <Link to='/cart/information/shipping'>
               <button>Continue to payment</button>
+              </Link>
             </div>
           </div>
         </div>

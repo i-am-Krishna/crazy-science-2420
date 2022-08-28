@@ -7,6 +7,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import AddedProduct from "./AddedProduct";
 import axios from "axios"
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 const CartPage = () => {
   // const [cartData, setCartData] = useState([])
   const [total, setTotal] = useState(0);
@@ -109,7 +110,9 @@ const CartPage = () => {
         <p>Taxes and shipping calculated at checkout</p></div>
         <div>
           <br />
-          <button>check out</button>
+<Link to={'/cart/information'}>
+          <button style={{cursor:"pointer"}}>Check out</button>
+</Link>
         </div>
         <br />
         <div className={styles.btn2}>

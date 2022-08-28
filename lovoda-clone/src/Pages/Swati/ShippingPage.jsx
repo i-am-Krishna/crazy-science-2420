@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./ShippingPage.module.css";
 import { GoChevronRight } from "react-icons/go";
 import { GoChevronLeft } from "react-icons/go";
+import { Link } from "react-router-dom";
 const ShippingPage = () => {
   const getInput= localStorage.getItem("emaildata")
   console.log(getInput)
@@ -26,20 +27,28 @@ const ShippingPage = () => {
           {/* start */}
           
           <div className={styles.InfoSecondHead}>
-            <div>
+          <div>
+              <Link to={'/cart'}>
               <p>Cart</p>
+              </Link>
             <GoChevronRight   />
             </div>
             <div>
+              <Link to={'/cart/information'}>
               <p>Information</p>
+              </Link>
             <GoChevronRight   />
             </div>
             <div>
-              <p>Shopping</p>
+              <Link to={'/cart/information/shipping'}>
+              <p>Shipping</p>
+              </Link>
             <GoChevronRight  />
             </div>
             <div>
+            <Link to={'/cart/information/shipping/payment'}>
               <p>Payment</p>
+            </Link>
             <GoChevronRight  />
             </div>
           </div>
@@ -95,7 +104,7 @@ const ShippingPage = () => {
             <div style={{height:"50px" ,display:"flex",flexDirection:"column" }}>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",width:"90%"}}>
 <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} >
-<input style={{width:"20px"}} type="radio"/>
+<input style={{width:"20px"}} type="radio" name="data"/>
 <span style={{fontSize:"14px"}}>Economy</span>
 
 </div>
@@ -117,7 +126,7 @@ $55
 <div style={{height:"50px" ,display:"flex",flexDirection:"column" }}>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",width:"90%"}}>
 <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} >
-<input style={{width:"20px"}} type="radio"/>
+<input style={{width:"20px"}} type="radio" name="data"/>
 <span style={{fontSize:"14px"}}>USPS prority mail</span>
 
 </div>
@@ -137,7 +146,7 @@ $55
  <div style={{height:"50px" ,display:"flex",flexDirection:"column" }}>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",width:"90%"}}>
 <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} >
-<input style={{width:"20px"}} type="radio"/>
+<input style={{width:"20px"}} type="radio" name="data"/>
 <span style={{fontSize:"14px"}}>UPS* Ground</span>
 
 </div>
@@ -227,10 +236,15 @@ $55
                   marginTop: "6%",
                 }}
               />
+
+              <Link to='/cart/information'>
               <p>Return to Information</p>
+              </Link>
             </div>
             <div className={styles.ContinueBtnPay}>
+              <Link to={'/cart/information/shipping/payment'}>
               <button>Continue to payment</button>
+              </Link>
             </div>
           </div>
         </div>
