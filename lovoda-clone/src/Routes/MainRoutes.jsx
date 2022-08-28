@@ -40,8 +40,8 @@ const MainRoutes = () => {
         }/>
         <Route path='/cart/information/shipping/payment' element={
             <RequiredAuth>
-        {/* <PaymentSuccess/> */}
-        <PaymentMain/>
+        <PaymentSuccess/>
+        {/* <PaymentMain/> */}
             </RequiredAuth>
         }/>
         <Route path='/cart/information/shipping/payment/order_successful' element={
