@@ -14,7 +14,7 @@ Netlify Link: https://lovoda-clone.vercel.app/
 ![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoCOaQQ_-vHc-rXBeNnPIz-ED-mSPX2Z8Kdg&usqp=CAU | width=100)
 ![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP0uHKp1RaB6WStt_amJtwxEI6_vJdhyl3TA&usqp=CAU | width=100)
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP0uHKp1RaB6WStt_amJtwxEI6_vJdhyl3TA&usqp=CAU" width="100" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP0uHKp1RaB6WStt_amJtwxEI6_vJdhyl3TA&usqp=CAU" width="100%" height="500px" />
 
 
 As we are still in the learning phase, the journey of building this website was very nice. We realized we could’ve achieved even more precision in building the website, but time was running out.
