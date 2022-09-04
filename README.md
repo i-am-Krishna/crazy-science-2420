@@ -10,8 +10,10 @@ Me: Krishna Kumar Gupta.
 Original website link : https://lovoda.com/
 
 Netlify Link: https://lovoda-clone.vercel.app/
+</br>
 ![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoCOaQQ_-vHc-rXBeNnPIz-ED-mSPX2Z8Kdg&usqp=CAU)
 
+</br>
 
 ![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP0uHKp1RaB6WStt_amJtwxEI6_vJdhyl3TA&usqp=CAU)
 
