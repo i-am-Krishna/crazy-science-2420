@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Lovoda-clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hello, I am going to talk about the Lovoda.com clone, a website that we built up for our RCT-211 construct week project task at Masai school. Website development is fun when all the team members collaborate and make a good website. Let me introduce you to my team-mates/collaborators :
+Alok Kumar Das,
+Ankit Sangwan,
+Rushikesh Pardhikar,
+Swati Saulanki,
+Me: Krishna Kumar Gupta.
 
-## Available Scripts
+Original website link : https://lovoda.com/
 
-In the project directory, you can run:
+Netlify Link: https://lovoda-clone.vercel.app/
+</br>
 
-### `npm start`
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoCOaQQ_-vHc-rXBeNnPIz-ED-mSPX2Z8Kdg&usqp=CAU" style="padding-left:15%" width="70%" height="300px" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP0uHKp1RaB6WStt_amJtwxEI6_vJdhyl3TA&usqp=CAU" style="padding-left:15%" width="70%" height="300px" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+As we are still in the learning phase, the journey of building this website was very nice. We realized we could’ve achieved even more precision in building the website, but time was running out.
 
-### `npm test`
+We still managed to pull this job to satisfactory results. Everyone was happy about it, it was like working hard on the farm, and then reaping the benefits of the tasty grains. The feeling of completing the project was very satisfying. Hard work pays off.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Hope you liked reading this blog post till this end.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for taking the time to read this blog.
