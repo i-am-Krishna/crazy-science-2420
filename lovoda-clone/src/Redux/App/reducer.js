@@ -20,7 +20,7 @@ export const reducer = (state = initialState,action) => {
       return {
         ...state,
         isLoading:false,
-        products:[...payload],
+        cart:payload,
         isError:false
       }
     }
@@ -33,17 +33,31 @@ export const reducer = (state = initialState,action) => {
       }
     }
  
+    case types.ADD_CART_REQUEST:{
+      return {
+        ...state,
+        isLoading:true,
+        isError:false
+      }
+    }
 
+    case types.ADD_CART_SUCCESS:{
+      return {
+        ...state,
+        isLoading:false,
+        cart:payload,
+        isError:false
+      }
+    }
 
-
-
-
-
-
-
-
-
-
+    case types.ADD_CART_FAILURE:{
+      return {
+        ...state,
+        isLoading:false,
+        isError:true
+      }
+    }
+ 
 
 
 

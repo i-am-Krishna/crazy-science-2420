@@ -9,7 +9,7 @@ import "./homePage.css"
 export const HomePage = () => {
   const dispatch = useDispatch();
   let product = useSelector((state)=>state.homepage.HomePageData)
-  console.log("s",product)
+  // console.log("s",product)
 
   useEffect(()=>{
     if(product.length === 0){

@@ -1,49 +1,37 @@
 import React from 'react';
 import styles from "./Cart.module.css";
-
 import { GrFormAdd } from "react-icons/gr";
 import { GrFormSubtract } from "react-icons/gr";
 import { useState } from "react";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { useDispatch } from 'react-redux';
+import { deleteCart, setCart } from '../../Redux/App/action';
+import { useEffect } from 'react';
 
-const AddedProduct = ({data, deleteCartData}) => {
+const AddedProduct = ({id,price,imageUrl_1}) => {
 const [totalP, setTotalP] = useState(0);
-const cartData = JSON.parse(localStorage.getItem("data")) ;
 const [count, setCount] = useState(1);
+const dispatch = useDispatch();
   const incCount = () => {
-    setCount(count + 1);
-    setTotalP(count*data.price)
+    if(count>0){
+      setCount(count + 1);
+      setTotalP(count*price)
+    }
   };
-
   const decCount = () => {
-    setCount(count - 1);
-    setTotalP(count*data.price)
+    if(count>1){
+      setCount(count - 1);
+      setTotalP(count*price)
+    }
   };
+  useEffect(()=>{
 
-  // const handleDelete = () => {
-  //   deleteCartData(data.id);
-  // }
+    dispatch(setCart())
+  },[])
+  function handleDelete(id){
+    dispatch(deleteCart(id)).then(()=>dispatch(setCart()));
 
-
-
-  
-  function handleDelete(index){
-    console.log(index)
-// const cartData = JSON.parse(localStorage.getItem("data")) ;
-//   console.log(cartData)
-//     cartData= cartData.filter((elem,id)=>{
-//         return index !== id ;
-//     })
-// localStorage.setItem("data",JSON.stringify(cartData))
 }
-
-
-
-
-
-
-
-
   return (
     <>
     <div className={styles.counterContainer}>
@@ -62,7 +50,7 @@ const [count, setCount] = useState(1);
     
         <div className={styles.TotalContainer}>
           <div className={styles.imageContainer}>
-            <img src={data.imageUrl_1} />
+            <img src={imageUrl_1} />
           </div>
           <div className={styles.CounterF}>
             <div className={styles.minus}>
@@ -79,12 +67,12 @@ const [count, setCount] = useState(1);
               </button>
             </div>
             <div className={styles.Delete}>
-              <RiDeleteBin6Line onClick={()=> handleDelete(data.id)}
+              <RiDeleteBin6Line onClick={()=> handleDelete(id)}
                 styles={{ fontSize: "35px", marginTop: "20%" }}
               />
             </div>
           </div>
-          <div style={{paddingRight:"50px"}}>{`$ ${count * data.price}`}</div>
+          <div style={{paddingRight:"50px"}}>{`$ ${count *price}`}</div>
         </div>
 </div>
 </>

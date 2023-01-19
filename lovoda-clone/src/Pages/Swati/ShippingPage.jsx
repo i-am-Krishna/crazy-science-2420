@@ -17,15 +17,6 @@ const ShippingPage = () => {
           <div className={styles.firstLhead}>
             <p>LOVODA</p>
           </div>
-
-          
-          
-          
-          
-          
-          
-          {/* start */}
-          
           <div className={styles.InfoSecondHead}>
           <div>
               <Link to={'/cart'}>
@@ -52,15 +43,7 @@ const ShippingPage = () => {
             <GoChevronRight  />
             </div>
           </div>
- 
-          
-          {/* end */}
-          
-          
-          
-          
-          
-           
+   
           <br />
           <div className={styles.ContactInfocontainer}>
             <div className={styles.firstInfoContainer}>
@@ -87,20 +70,7 @@ const ShippingPage = () => {
               <p>Shipping method</p>
             </div>
           </div>
-
-
-
-
-
-
-
-
-
-
            <div className={styles.radioInfoForm}>
-
- 
-
             <div style={{height:"50px" ,display:"flex",flexDirection:"column" }}>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",width:"90%"}}>
 <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} >
@@ -117,12 +87,6 @@ $55
 </div>
  </div>
             <hr></hr>
-
-
-       
-
-
-
 <div style={{height:"50px" ,display:"flex",flexDirection:"column" }}>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",width:"90%"}}>
 <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} >
@@ -138,11 +102,7 @@ $55
 3 business days
 </div>
  </div>
-
  <hr />
-
-
- 
  <div style={{height:"50px" ,display:"flex",flexDirection:"column" }}>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",width:"90%"}}>
 <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} >
@@ -158,74 +118,7 @@ $55
 4 business days
 </div>
  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-            {/* <div className={styles.RadioFormInfo}>
-             <div className={styles.TwoRadio}>
-             <input type="radio"/>
-             <p>USPS Prority Mail</p>
-             </div>
-             <div>
-             <p>$55</p>
-
-             </div>
-            </div>
-            <div className={styles.HeadRadio}>
-             <p>3 business days</p>
-            </div>
-            <hr></hr>
-
-            <div className={styles.RadioFormInfo}>
-             <input type="radio"/>
-             <div className={styles.ThreeRadio}>
-             <p>UPS* Ground</p>
-             </div>
-             <div>
-             <p>$55</p>
-
-             </div>
-            </div>
-            <div className={styles.HeadRadio}>
-             <p>4 business days</p>
-            </div>
- */}
-
-
       </div> 
-
-
-
-
-
-
-
-
-
-
-
-
-
           <br/>
           <div className={styles.ContinuePayButt}>
             <div className={styles.ReturnTocartf}>
@@ -253,7 +146,7 @@ $55
           <div className={styles.SecondContainerT}>
             <div className={styles.ImageContainer}>
               <div>
-                <img src="https://media.istockphoto.com/photos/alluring-woman-dressed-in-a-posh-jewelry-set-of-necklace-ring-and-picture-id1180931397?k=20&m=1180931397&s=612x612&w=0&h=f-0SQWW3Wxc8zh4HMLB2p_R4mYhLzHX3-aGrghKuRu4=" />
+                <img src="https://media.istockphoto.com/photos/alluring-woman-dressed-in-a-posh-jewelry-set-of-necklace-ring-and-picture-id1180931397?k=20&m=1180931397&s=612x612&w=0&h=f-0SQWW3Wxc8zh4HMLB2p_R4mYhLzHX3-aGrghKuRu4=" alt="random image"/>
                 </div>
 
                <div><p>fern Bengal</p></div> 

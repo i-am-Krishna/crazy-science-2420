@@ -19,36 +19,16 @@ const MainRoutes = () => {
     <Routes>
         <Route path='/' element={<HomePage/>} />
         <Route path='/:id' element={<ProductDetails/>} />
-
         <Route path='/new_products' element={<NewProducts/>}/>
         <Route path='/new_products/:id' element={<ProductDetails/>}/>
-
         <Route path='/all_products' element={<AllPages/>}/>
-        
         <Route path='/all_products/:id' element={<ProductDetails/>}/>
         <Route path='/cart' element={<CartPage/>}/>
         <Route path='/login' element={<Signin/>}/>
-        <Route path='/cart/information' element={
-            <RequiredAuth>
-        <PaymentPage/>
-            </RequiredAuth>
-        }/>
-        <Route path='/cart/information/shipping' element={
-            <RequiredAuth>
-        <ShippingPage/>
-            </RequiredAuth>
-        }/>
-        <Route path='/cart/information/shipping/payment' element={
-            <RequiredAuth>
-        <PaymentSuccess/>
-        {/* <PaymentMain/> */}
-            </RequiredAuth>
-        }/>
-        <Route path='/cart/information/shipping/payment/order_successful' element={
-            <RequiredAuth>
-        <OrderComplete/>
-            </RequiredAuth>
-        }/>
+        <Route path='/cart/information' element={<RequiredAuth><PaymentPage/></RequiredAuth>}/>
+        <Route path='/cart/information/shipping' element={<RequiredAuth><ShippingPage/></RequiredAuth>}/>
+        <Route path='/cart/information/shipping/payment' element={<RequiredAuth><PaymentSuccess/></RequiredAuth>}/>
+        <Route path='/cart/information/shipping/payment/order_successful' element={<RequiredAuth><OrderComplete/></RequiredAuth>}/>
     </Routes>
   )
 }

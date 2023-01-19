@@ -6,44 +6,30 @@ import { useState } from "react";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import AddedProduct from "./AddedProduct";
 import axios from "axios"
+import { useDispatch,useSelector } from "react-redux";
 import { useEffect } from "react";
+
 import { Link } from "react-router-dom";
+import { setCart } from "../../Redux/App/action";
+import CartEmpty from "./CartEmpty";
 const CartPage = () => {
   // const [cartData, setCartData] = useState([])
   const [total, setTotal] = useState(0);
   const [quantity, setQuantity] = useState(1)
-  const cartData = JSON.parse(localStorage.getItem("data")) || []
+  const cartData = useSelector((store)=>store.app.cart);
+  const dispatch = useDispatch()
+  // const cartData = JSON.parse(localStorage.getItem("data")) || []
   // const incCount = () => {
   //   setCount(count + 1);
   // };
 
-  // const getCart = () => {
-  //   axios.get("http://localhost:8080/Cart")
-  //   .then((r) => {
-  //     setCartData(r.data)
-  //     let tot = 0;
-  //     for(let i=0; i<r.data.length; i++){
-  //       tot += r.data[i].price
-  //     }
-  //     setTotal(tot)
-  //   })
-  // }
-
-  // const handleDelete = (id) => {
-  //   console.log(id);
-  //   axios.delete(`http://localhost:8080/Cart/${id}`)
-  //   .then(() => {
-  //     getCart();
-  //   })
-  // }
-
-  // useEffect(() => {
-  //   getCart();
-  // },[])
-
-  // const decCount = () => {
-  //   setCount(count - 1);
-  // };
+  useEffect(()=>{
+    // if(cartData.length === 0){
+    dispatch(setCart())
+    // }
+  },[])
+  console.log(cartData)
+  
   return (
     <>
       {/* <div className={styles.ProductContainer}> */}
@@ -53,49 +39,13 @@ const CartPage = () => {
         </div>
         <hr style={{ width: "70%" }}></hr>
         {/* <AddedProduct/> */}
+
         {
           cartData.length > 0 && cartData.map((item) => {
-            return <AddedProduct setTotal={setTotal} total={total} data={item} setQuantity={setQuantity}   key={item.id}/>
+            return <AddedProduct setTotal={setTotal} total={total} {...item} setQuantity={setQuantity}   key={item.id}/>
           })
         }
-        {/* <div className={styles.counterContainer}>
-          <div className={styles.Productimg}>
-            <p>Product</p>
-          </div>
-          <div>
-            <p>QUANTITY</p>
-          </div>
-          <div>
-            <p>TOTAL</p>
-          </div>
-        </div>
-        <div className={styles.TotalContainer}>
-          <div className={styles.imageContainer}>
-            <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101105-1_1_300x.jpg?v=1659449763" />
-          </div>
-          <div className={styles.CounterF}>
-            <div className={styles.minus}>
-              <button onClick={decCount}>
-                <GrFormSubtract style={{ fontSize: "20px" }} />
-              </button>
-            </div>
-            <div className={styles.CountSec}>
-              <h1>{count}</h1>
-            </div>
-            <div className={styles.plus}>
-              <button onClick={incCount}>
-                <GrFormAdd style={{ fontSize: "20px" }} />
-              </button>
-            </div>
-            <div className={styles.Delete}>
-              <RiDeleteBin6Line
-                styles={{ fontSize: "35px", marginTop: "20%" }}
-              />
-            </div>
-          </div>
-          <div>$180</div>
-        </div>
-      </div> */}
+ 
 
       <div className={styles.btn}>
         <div className={styles.P1div}>

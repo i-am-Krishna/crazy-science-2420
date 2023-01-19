@@ -8,7 +8,7 @@ import { allDatas } from '../../Redux/Allpage/action';
 import {TiMessages} from 'react-icons/ti'
 import {AiOutlineStar} from 'react-icons/ai'
 import axios from 'axios';
-import { postTodosRequest, postTodosSuccess, setCartData, } from '../../Redux/App/action';
+import { addCart, postTodosRequest, postTodosSuccess, setCart, setCartData, } from '../../Redux/App/action';
 const ProductDetails = () => {
   const {id} = useParams();
   const dispatch = useDispatch();
@@ -31,35 +31,9 @@ if(id){
   singleProduct && setCurrentProduct(singleProduct)
 }
 },[id,product])
-
- 
-
-
-
-const handleCartClick=()=>{
-  
-  let data = currentProduct 
-  let product_data = JSON.parse(localStorage.getItem("data")) || [] ;
-  product_data.push(data);
-  localStorage.setItem("data",JSON.stringify(product_data))
-
-  // console.log(data)
-  // setData("cartArr",JSON.stringify(currentProduct))
-
-//  dispatch(setCartData(currentProduct)).then((res)=>setData(res.data)).then(()=> navigate('/cart'))
-}
-
-
-
-
- 
-
-
-
-
-
-
-
+const handleCartClick=(data)=>{
+    dispatch(addCart(data)).then(()=>navigate("/cart")).then(()=>dispatch(setCart()))
+  }
   return (
     <>
     <div className='product_main_section'> 
@@ -118,7 +92,7 @@ const handleCartClick=()=>{
 
     <div className='button_box'>
       <Link to={'/cart'}>
-      <button onClick={handleCartClick} className='cart_buttons'>Add to cart</button>
+      <button onClick={()=> handleCartClick(currentProduct)} className='cart_buttons'>Add to cart</button>
       </Link>
   
       <button className='cart_buttons'>Add to Wishlist</button>
@@ -128,8 +102,6 @@ const handleCartClick=()=>{
  </Link>
  
     </div>
-
-
 <div className='leaf_design'>
   <p>An ear cuff of a fern leaf design in gold!</p>
   <ul>
@@ -145,8 +117,6 @@ const handleCartClick=()=>{
 
         </div>
       </div>
-       
- 
      </div>
      <div className='FeaturedContainer'>
         <div>
