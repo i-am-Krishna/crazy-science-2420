@@ -8,16 +8,20 @@ import { BsHeart } from 'react-icons/bs'
 
 import './allPage.css'
 import FilterSort from '../Filter/Filter&Sort'
-import { Link, useLocation, useSearchParams } from 'react-router-dom'
+import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom'
 
 const AllPages = () => {
     const dispatch=useDispatch()
     const location = useLocation()
     const [searchParams] = useSearchParams()
+    const navigate = useNavigate()
 
     let mydata=useSelector((store)=>store.allPage.arr)
     
-
+const handleClick=(id)=>{
+  localStorage.setItem("page","shop")
+  navigate(`/all_products/${id}`)
+}
 
 
     useEffect(()=>{
@@ -46,15 +50,16 @@ const AllPages = () => {
     <div className='new_product11'>  {mydata.map((elem)=>   (   
       
       <div className='single_new_product11' key={elem.id}>
-        <Link to={`/all_products/${elem.id}`}>
-        <div className='card'>
+        {/* <Link to={`/all_products/${elem._id}`} > */}
+
+        <div onClick={()=>handleClick(elem._id)} className='card'>
         <img src={elem.imageUrl_1} alt={elem.name} />
         <img src={elem.imageUrl_2} alt={elem.name} className="img-top"/>
         </div> 
         <div className='div_icon'><BsHeart className='heart_icon'/></div>
         <p className='single_product_title'>{elem.name}</p>
         <p className='single_product_price'>${elem.price}.00</p>
-        </Link>
+        {/* </Link> */}
         </div>
        
        ))}

@@ -1,13 +1,19 @@
 import React from 'react'
 import {BsHeart} from 'react-icons/bs'
-import { Link } from 'react-router-dom'
+import { FaNs8 } from 'react-icons/fa'
+import { Link, useNavigate } from 'react-router-dom'
 import "./productCard.css"
 
-const ProductCard = ({id,imageUrl_1,imageUrl_2,name,price}) => {
+const ProductCard = ({_id,imageUrl_1,imageUrl_2,name,price}) => {
+    const navigate = useNavigate()
+    const handleClick = ()=>{
+        localStorage.setItem("page","home")
+        navigate(`/${_id}`)
+    }
   return (
     <div>
-        <div className='single_new_product'>
-            <Link to={`/${id}`}>
+        <div onClick={handleClick} className='single_new_product'>
+            {/* <Link to={`/${_id}`}> */}
 
         <div className='card'>
             <img src={imageUrl_1} alt={name} />
@@ -17,7 +23,7 @@ const ProductCard = ({id,imageUrl_1,imageUrl_2,name,price}) => {
 
             <p className='single_product_title'>{name}</p>
             <p className='single_product_price'>${price}</p>
-            </Link>
+            {/* </Link> */}
         </div>
     </div>
   )

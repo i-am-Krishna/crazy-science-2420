@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "./Cart.module.css";
 import { GrFormAdd } from "react-icons/gr";
-import { GrFormSubtract } from "react-icons/gr";
 import { useState } from "react";
-import { RiDeleteBin6Line } from "react-icons/ri";
 import AddedProduct from "./AddedProduct";
 import axios from "axios"
 import { useDispatch,useSelector } from "react-redux";
@@ -13,21 +11,18 @@ import { Link } from "react-router-dom";
 import { setCart } from "../../Redux/App/action";
 import CartEmpty from "./CartEmpty";
 const CartPage = () => {
-  // const [cartData, setCartData] = useState([])
+  const [cartData, setCartData] = useState([])
   const [total, setTotal] = useState(0);
   const [quantity, setQuantity] = useState(1)
-  const cartData = useSelector((store)=>store.app.cart);
-  const dispatch = useDispatch()
-  // const cartData = JSON.parse(localStorage.getItem("data")) || []
-  // const incCount = () => {
-  //   setCount(count + 1);
-  // };
+   
+  const id = localStorage.getItem("cartId")
 
-  useEffect(()=>{
-    // if(cartData.length === 0){
-    dispatch(setCart())
-    // }
-  },[])
+  useEffect(() => {
+      axios.get(`https://lovoda-backend.vercel.app/api/cart/${id}`)
+      .then(res=> setCartData(res.data.data))
+      .catch(err=> console.log(err))
+  }, [])
+ 
   console.log(cartData)
   
   return (
@@ -42,7 +37,7 @@ const CartPage = () => {
 
         {
           cartData.length > 0 && cartData.map((item) => {
-            return <AddedProduct setTotal={setTotal} total={total} {...item} setQuantity={setQuantity}   key={item.id}/>
+            return <AddedProduct setTotal={setTotal} total={total} {...item} setQuantity={setQuantity}   key={item._id}/>
           })
         }
  

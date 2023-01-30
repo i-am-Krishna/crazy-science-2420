@@ -4,7 +4,7 @@ import axios from "axios";
 export const getHomePageData = (parms) => (dispatch) => {
   dispatch({ type:GET_HOMEPAGE_REQUEST });
    axios
-    .get("https://database-lovoda-clone-production.up.railway.app/api/HomePageData", parms) 
+    .get("https://lovoda-backend.vercel.app/api/home", parms) 
     .then((res) =>
       dispatch({ type: GET_HOMEPAGE_SUCCESS, payload: res.data })
     )

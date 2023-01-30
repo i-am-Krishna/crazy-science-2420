@@ -26,7 +26,7 @@ export const HomePage = () => {
 
         <div className='new_product'>
           {product.length>0 && product.map((item)=>(
-            <ProductCard key={item.id} {...item}/>
+            <ProductCard key={item._id} {...item}/>
           ))}
         </div>
             <br /><br />

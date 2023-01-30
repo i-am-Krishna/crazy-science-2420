@@ -20,6 +20,7 @@ const Signin = () => {
     if (email && password) {
       dispatch(login({ email, password })).then((r) => {
         if (r.type === LOGIN_SUCCESS) {
+          localStorage.setItem("cartId",r.payload.user._id)
           navigate(comingFrom, { replace: true });
         }
       });
@@ -81,9 +82,9 @@ const Signin = () => {
           />
           <p id={styles.forgotpass}>Forgot Your Password?</p>
           <input type="submit" id={styles.loginsubmit} value="Sign in" />
-          {/* <Link to={'/signup'}>
+          <Link to={'/signup'}>
           <p id={styles.createaccount} style={{textDecoration:"none"}}>Create account</p>
-          </Link> */}
+          </Link>
         </form>
       </div>
     );

@@ -1,78 +1,44 @@
 import { useDispatch } from 'react-redux'
 import styles from '../../styles/signup.module.css'
 import * as types from '../../Redux/Auth/actionTypes'
-import { register } from '../../Redux/Auth/action'
+import { signup } from '../../Redux/Auth/action'
 import { useNavigate } from 'react-router-dom'
-import { useReducer } from 'react'
-
-function reducer(state,action){
-  switch(action.type){
-
-      case 'name': return {
-          ...state,
-          name:action.payload
-      }
-      
-      case 'email': return {
-          ...state,
-          email:action.payload
-      }
-      
-      case 'password': return {
-          ...state,
-          password:action.payload
-      }
-
-      
-      case 'username': return {
-          ...state,
-          username:action.payload
-      }
-      
-      case 'mobile': return {
-          ...state,
-          mobile:action.payload
-      }
-      
-      case 'description': return {
-          ...state,
-          description:action.payload
-      }
-
-      default : return state;
-  }
-}
-
-const initState = {
-  name: '',
-  email: '',
-  password: '',
-  username: '',
-  mobile: '',
-  description: ''
-} 
-
-
-
-
+import { useState } from 'react'
 
 
 
 
 const Signup = () => {
-
-  const [state,rDispatch] = useReducer(reducer,initState);
-    const disPatch = useDispatch()
+  const [data,setData] = useState({
+    name:"",
+    email:"",
+    password:""
+});  const dispatch = useDispatch()
     const navigate = useNavigate()
-    const signUpHandle=(e)=>{
-      e.preventDefault();
-        disPatch(register(state)).then((r)=> {
-          if(r === types.REGISTER_SUCCESS){
-            navigate('/login',{replace: true});
-          }
-        })
-    }
+    // const signUpHandle=(e)=>{
+    //   e.preventDefault();
+    //     disPatch(signup(state)).then((r)=> {
+    //       if(r === types.REGISTER_SUCCESS){
+    //         navigate('/login',{replace: true});
+    //       }
+    //     })
+    // }
 
+    const handleChange=(e)=>{
+      const {name,value} = e.target;
+      setData({
+          ...data,
+          [name]:value
+      });
+  }
+  const handleSubmit=async(e)=>{
+      e.preventDefault();
+      if(data.name && data.email && data.password){
+        await dispatch(signup(data)).then((res)=>{if(res.type === "REGISTER_SUCCESS"){navigate("/login")}else{
+          alert("Something went wrong please try again")
+        }})
+      }
+  }
 
 
 
@@ -115,19 +81,16 @@ const Signup = () => {
           </div>
         </div>
       </div>
-      <form onSubmit={signUpHandle}>
+      <form onSubmit={handleSubmit}>
 
 {/* ============================ */}
 
-        <input required id={styles.fname} placeholder="Name"  type="text" value={state.name} onChange={(e)=> rDispatch({type:'name', payload:e.target.value})}/>
+        <input required name='name'  placeholder="Name"  type="text" value={data.name} onChange={handleChange}/>
 
-        <input required type="text" id={styles.lname} placeholder="Username" value={state.username} onChange={(e)=>rDispatch({type:'username',payload:e.target.value})}  />
+ 
+        <input required type="email" name='email' id={styles.email} placeholder="Email"  value={data.email} onChange={handleChange}/>
 
-        <input required type="email" id={styles.email} placeholder="Email"  value={state.email} onChange={(e)=>rDispatch({type:'email',payload:e.target.value})}/>
-
-        <input required type="password" id={styles.password} placeholder="Password" value={state.password} onChange={(e)=>rDispatch({type:'password',payload:e.target.value})}  />
-        <input type="number"  value={state.mobile} onChange={(e)=>rDispatch({type:'mobile',payload:e.target.value})} />
-        <textarea value={state.description} onChange={(e)=>rDispatch({type:'description',payload:e.target.value})}/>
+        <input required type="password" name='password' id={styles.password} placeholder="Password" value={data.password} onChange={handleChange}  />  
                       
 
 
@@ -136,17 +99,7 @@ const Signup = () => {
 
 
 
-
-
-        <div id={styles.newsletter}>
-
-
-
-
-            <p>Subscribe for Newsletter</p>
-            <input type="checkbox" id={styles.checkbox} />
-
-        </div>
+ 
         <input type="submit" value="Create" />
       </form>
     </div>);

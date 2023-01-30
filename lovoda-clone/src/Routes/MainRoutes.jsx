@@ -11,7 +11,8 @@ import Signin from '../Components/Auth/signin'
 import ProductDetails from '../Pages/Krishna/ProductDetails'
 import OrderComplete from '../Pages/Alok/OrderComplete'
 import ShippingPage from '../Pages/Swati/ShippingPage'
-import PaymentMain from '../Pages/Swati/PaymentMain'
+import Signup from '../Components/Auth/signup'
+// import PaymentMain from '../Pages/Swati/PaymentMain'
 
 
 const MainRoutes = () => {
@@ -25,6 +26,7 @@ const MainRoutes = () => {
         <Route path='/all_products/:id' element={<ProductDetails/>}/>
         <Route path='/cart' element={<CartPage/>}/>
         <Route path='/login' element={<Signin/>}/>
+        <Route path='/signup' element={<Signup/>}/>
         <Route path='/cart/information' element={<RequiredAuth><PaymentPage/></RequiredAuth>}/>
         <Route path='/cart/information/shipping' element={<RequiredAuth><ShippingPage/></RequiredAuth>}/>
         <Route path='/cart/information/shipping/payment' element={<RequiredAuth><PaymentSuccess/></RequiredAuth>}/>

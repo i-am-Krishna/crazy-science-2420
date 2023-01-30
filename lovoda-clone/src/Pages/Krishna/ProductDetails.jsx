@@ -4,7 +4,7 @@ import {Link, Navigate, useNavigate, useParams} from 'react-router-dom'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import {useDispatch, useSelector} from 'react-redux'
-import { allDatas } from '../../Redux/Allpage/action';
+// import { allDatas } from '../../Redux/Allpage/action';
 import {TiMessages} from 'react-icons/ti'
 import {AiOutlineStar} from 'react-icons/ai'
 import axios from 'axios';
@@ -15,24 +15,43 @@ const ProductDetails = () => {
   const navigate = useNavigate();
   const [currentProduct,setCurrentProduct] = useState({});
   const [number,setNumber] = useState(1);
-  const [data,setData] = useState([])
+  const page = localStorage.getItem("page");
+  const cartId = localStorage.getItem("cartId");
+  console.log(cartId)
+  // const [data,setData] = useState([])
 
-const product = useSelector((store)=> store.allPage.arr);
+// const product = useSelector((store)=> store.allPage.arr);
 
-useEffect(()=>{
-if(product.length === 0){
-  dispatch(allDatas())
-}
-},[dispatch,product.length])
-
-useEffect(()=>{
-if(id){
-  const singleProduct = product.find((item)=> item.id === Number(id))
-  singleProduct && setCurrentProduct(singleProduct)
-}
-},[id,product])
+// useEffect(()=>{
+// if(product.length === 0){
+//   dispatch(allDatas())
+// }
+// },[dispatch,product.length]) 
+// useEffect(()=>{
+// if(id){
+  // const singleProduct = product.find((item)=> item.id === Number(id))
+  // singleProduct && setCurrentProduct(singleProduct)
+  const singleP = async()=>{
+let res ;
+    if(page==="home") {  res = await axios.get(`https://lovoda-backend.vercel.app/api/home/${id}`)}else if(page==="shop"){
+      res = await axios.get(`https://lovoda-backend.vercel.app/api/shop/${id}`)
+   }else{
+      res = await axios.get(`https://lovoda-backend.vercel.app/api/product/${id}`)
+   }
+   let data = res.data;
+  //  console.log(data)
+  setCurrentProduct(data.data)
+  //  return data;
+  }
+  useEffect(()=>{
+    if(id){
+      singleP();
+    }
+  },[id])
+// }
+// },[id,product])
 const handleCartClick=(data)=>{
-    dispatch(addCart(data)).then(()=>navigate("/cart")).then(()=>dispatch(setCart()))
+    dispatch(addCart({...data,userid:cartId})).then(()=>navigate("/cart")).then(()=>dispatch(setCart()))
   }
   return (
     <>

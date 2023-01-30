@@ -7,8 +7,9 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { useDispatch } from 'react-redux';
 import { deleteCart, setCart } from '../../Redux/App/action';
 import { useEffect } from 'react';
+import axios from 'axios';
 
-const AddedProduct = ({id,price,imageUrl_1}) => {
+const AddedProduct = ({_id,price,imageUrl_1}) => {
 const [totalP, setTotalP] = useState(0);
 const [count, setCount] = useState(1);
 const dispatch = useDispatch();
@@ -25,11 +26,17 @@ const dispatch = useDispatch();
     }
   };
   useEffect(()=>{
+    if(_id){
+      dispatch(setCart())
+    }
+  },[_id])
+ async function handleDelete (_id){
+    dispatch(deleteCart(_id)).then((res)=>console.log(res.data)).then(()=>window.location.reload());
+  // let res = await axios.delete(`http://localhost:8000/api/cart/${_id}`)
+  // let data = res.data;
+  // dispatch(setCart())
+  // console.log(data)
 
-    dispatch(setCart())
-  },[])
-  function handleDelete(id){
-    dispatch(deleteCart(id)).then(()=>dispatch(setCart()));
 
 }
   return (
@@ -67,7 +74,7 @@ const dispatch = useDispatch();
               </button>
             </div>
             <div className={styles.Delete}>
-              <RiDeleteBin6Line onClick={()=> handleDelete(id)}
+              <RiDeleteBin6Line onClick={()=> handleDelete(_id)}
                 styles={{ fontSize: "35px", marginTop: "20%" }}
               />
             </div>

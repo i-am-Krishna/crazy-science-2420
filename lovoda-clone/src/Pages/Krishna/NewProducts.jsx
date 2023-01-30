@@ -36,7 +36,7 @@ const NewProducts = () => {
     <div><FilterSort length={products.length}/></div>
     <div className='new_product'>
         {products.length > 0 && products.map((item)=>(
-            <SingleNewProduct key={item.id} {...item}/>
+            <SingleNewProduct key={item._id} {...item}/>
         ))}
     </div>
             </>
